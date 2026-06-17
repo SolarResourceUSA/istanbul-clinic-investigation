@@ -197,6 +197,78 @@
   .rankwhy{background:#f4f8fb;border-left:3px solid var(--teal2);border-radius:9px;padding:10px 13px;font-size:13px;line-height:1.55}
   .rankwhy .lbl{font-weight:800;color:var(--teal);font-family:'Sora',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.05em;margin-right:5px}
   @media(max-width:560px){.rankrow{flex-direction:column;gap:11px}.pricechip{margin-left:0}}
+
+  /* ============ MOBILE OPTIMIZATION (phones ≤640px) ============ */
+  @media (max-width:640px){
+    html,body{overflow-x:hidden}
+    body{font-size:14.5px;line-height:1.6;background:linear-gradient(180deg,#e8edf3,#f4f7fa 180px)}
+    .wrap{padding:0 14px}
+
+    /* masthead */
+    header.masthead{padding:38px 0 32px}
+    header.masthead h1{font-size:24px;line-height:1.18}
+    header.masthead p{font-size:14px}
+    .kicker{font-size:10.5px}
+    .meta{margin-top:16px;gap:7px;font-size:12px}
+    .meta span{padding:5px 10px}
+
+    /* sticky toc -> single-line horizontal scroller */
+    nav.toc .wrap{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+      scrollbar-width:none;padding-bottom:2px}
+    nav.toc .wrap::-webkit-scrollbar{display:none}
+    nav.toc a{flex:0 0 auto}
+
+    /* sections */
+    section{margin:16px 0;padding:20px 17px;border-radius:14px}
+    h2{font-size:20px;padding-left:13px}
+    h2:before{width:4px}
+    h3{font-size:15.5px;margin-top:20px}
+    .sub{font-size:12.5px;margin-bottom:14px}
+    p,li{font-size:14.5px}
+    .lead{font-size:15px}
+
+    /* hero stats */
+    .hero{padding:24px 18px 22px;border-radius:14px}
+    .hero h2{font-size:20px}
+    .statgrid{grid-template-columns:1fr 1fr;gap:10px}
+    .statnum{font-size:25px}
+    .statnum small{font-size:14px}
+    .herocols{gap:16px}
+
+    /* grids collapse */
+    .grid{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr 1fr;gap:11px}
+    .gcard .thumb{height:96px}
+
+    /* tables: let the scroller actually scroll, shrink min-width */
+    .scroller table{min-width:560px;font-size:12.5px}
+    .scroller th,.scroller td{padding:8px 9px}
+    table{font-size:12.5px}
+    .savetable{font-size:12px}
+
+    /* ranking cards */
+    .rankrow{flex-direction:column;gap:11px;padding:15px 15px}
+    .medal{width:44px;height:44px;font-size:19px;border-radius:12px}
+    .rankname{font-size:15px}
+    .pricechip{margin-left:0}
+    .rankhead{gap:6px}
+    .contactline{gap:3px 12px;font-size:12px}
+    .contactline span,.contactline a{white-space:normal;word-break:break-word}
+
+    /* misc */
+    .card{padding:14px 15px}
+    .callout,.msg,.disclaimer{font-size:13.5px}
+    .secthead{font-size:15.5px;gap:9px}
+    .secthead .ic{width:32px;height:32px;font-size:16px}
+    a{word-break:break-word}
+  }
+
+  @media (max-width:380px){
+    .statgrid{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr}
+    header.masthead h1{font-size:21px}
+  }
+
 </style>
 </head>
 <body>
