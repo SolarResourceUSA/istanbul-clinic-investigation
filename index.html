@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Istanbul Cosmetic & Hair Investigation — Jeremy & Vanessa</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap');
+  :root{
+    --ink:#1a1d21; --muted:#5b6470; --line:#e4e7ec; --bg:#f7f8fa; --card:#fff;
+    --navy:#16324f; --teal:#0f766e; --gold:#b8860b;
+    --red:#b42318; --redbg:#fef3f2; --amber:#b54708; --amberbg:#fffaeb;
+    --green:#067647; --greenbg:#ecfdf3; --blue:#175cd3; --bluebg:#eff6ff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.55;font-size:15px}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  header.masthead{background:linear-gradient(135deg,#16324f,#0f766e);color:#fff;padding:42px 0 34px}
+  header.masthead .wrap{padding-top:0}
+  .kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;opacity:.85;margin-bottom:8px}
+  header.masthead h1{margin:0 0 10px;font-size:30px;line-height:1.2}
+  header.masthead p{margin:0;opacity:.92;font-size:15px;max-width:760px}
+  .meta{margin-top:18px;font-size:13px;opacity:.85;display:flex;flex-wrap:wrap;gap:18px}
+  nav.toc{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;
+    padding:10px 0;font-size:13px;box-shadow:0 1px 4px rgba(0,0,0,.03)}
+  nav.toc .wrap{display:flex;flex-wrap:wrap;gap:6px 14px}
+  nav.toc a{color:var(--muted);text-decoration:none;white-space:nowrap}
+  nav.toc a:hover{color:var(--teal)}
+  section{background:var(--card);margin:22px 0;border:1px solid var(--line);border-radius:12px;padding:26px 28px}
+  h2{font-size:21px;margin:0 0 4px;color:var(--navy);scroll-margin-top:70px}
+  h2 .num{color:var(--teal);font-weight:700}
+  .sub{color:var(--muted);font-size:13.5px;margin:0 0 18px}
+  h3{font-size:16.5px;margin:22px 0 8px;color:var(--ink)}
+  h4{font-size:14.5px;margin:16px 0 6px}
+  p{margin:0 0 12px}
+  a{color:var(--blue)}
+  ul,ol{margin:0 0 14px;padding-left:20px}
+  li{margin:5px 0}
+  .lead{font-size:16px}
+  .badge{display:inline-block;padding:2px 9px;border-radius:999px;font-size:11.5px;font-weight:700;
+    letter-spacing:.02em;vertical-align:middle}
+  .b-red{background:var(--redbg);color:var(--red)}
+  .b-amber{background:var(--amberbg);color:var(--amber)}
+  .b-green{background:var(--greenbg);color:var(--green)}
+  .b-blue{background:var(--bluebg);color:var(--blue)}
+  .b-grey{background:#f2f4f7;color:#475467}
+  .callout{border-left:4px solid;border-radius:8px;padding:14px 16px;margin:16px 0;font-size:14.5px}
+  .c-red{background:var(--redbg);border-color:var(--red)}
+  .c-amber{background:var(--amberbg);border-color:var(--amber)}
+  .c-green{background:var(--greenbg);border-color:var(--green)}
+  .c-blue{background:var(--bluebg);border-color:var(--blue)}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#f9fafb;color:#344054;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
+  tr:hover td{background:#fcfcfd}
+  .scroller{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+  .scroller table{margin:0;min-width:1180px}
+  .scroller th{position:sticky;top:0}
+  .rank{font-weight:800;color:var(--teal)}
+  .card{border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0;background:#fff}
+  .card.top{border-color:#bfe3dd;box-shadow:0 1px 3px rgba(15,118,110,.08)}
+  .card h4{margin-top:0;font-size:15.5px}
+  .pill-row{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
+  .kv{font-size:13.5px;margin:3px 0}
+  .kv b{color:#344054}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}.scroller table{min-width:900px}}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:14px 0}
+  .gcard{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+  .gcard .thumb{height:110px;display:flex;align-items:center;justify-content:center;color:#fff;
+    font-size:13px;font-weight:700;text-align:center;padding:0 12px;line-height:1.3}
+  .g1{background:linear-gradient(135deg,#0f766e,#14b8a6)}
+  .g2{background:linear-gradient(135deg,#16324f,#3b6ea5)}
+  .g3{background:linear-gradient(135deg,#7c3aed,#a78bfa)}
+  .g4{background:linear-gradient(135deg,#b8860b,#d4af37)}
+  .g5{background:linear-gradient(135deg,#be123c,#fb7185)}
+  .g6{background:linear-gradient(135deg,#334155,#64748b)}
+  .gcard .body{padding:11px 13px}
+  .gcard .body b{font-size:13.5px}
+  .gcard .body p{font-size:12.5px;color:var(--muted);margin:4px 0 8px}
+  .gcard a{font-size:12.5px;font-weight:700;text-decoration:none}
+  .score{font-variant-numeric:tabular-nums;font-weight:800}
+  .footnote{font-size:12.5px;color:var(--muted)}
+  .check{list-style:none;padding-left:0}
+  .check li{padding-left:28px;position:relative;margin:9px 0}
+  .check li:before{content:"☐";position:absolute;left:0;top:-1px;font-size:17px;color:var(--teal)}
+  .msg{background:#f9fafb;border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:12px 0;
+    font-size:13.5px;white-space:pre-wrap;font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace;line-height:1.5}
+  .msg .lbl{font-family:-apple-system,sans-serif;font-weight:700;color:var(--navy);display:block;margin-bottom:8px;font-size:13px}
+  details{border:1px solid var(--line);border-radius:8px;margin:10px 0;padding:0 14px;background:#fff}
+  summary{cursor:pointer;font-weight:700;padding:12px 0;font-size:14px;color:var(--navy)}
+  details[open]{padding-bottom:8px}
+  .disclaimer{background:#fff8e1;border:1px solid #f4d775;border-radius:10px;padding:14px 16px;font-size:13px;margin:18px 0}
+  footer{padding:30px 0 50px;color:var(--muted);font-size:12.5px;text-align:center}
+  .legend{font-size:12px;color:var(--muted);margin:6px 0 0}
+  sup{font-size:10px}
+  .hero{background:linear-gradient(135deg,#0f2438,#0f766e);color:#fff;border:none;border-radius:14px;padding:30px 30px 26px;margin:22px 0}
+  .hero h2{color:#fff;font-size:23px;margin:0 0 6px}
+  .hero .sub{color:rgba(255,255,255,.82)}
+  .statgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:20px 0 6px}
+  .stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:11px;padding:16px 14px;text-align:center}
+  .statnum{font-size:30px;font-weight:800;line-height:1;letter-spacing:-.01em}
+  .statnum small{font-size:16px;font-weight:700}
+  .statlabel{font-size:12px;color:rgba(255,255,255,.82);margin-top:7px;line-height:1.3}
+  .herocols{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}
+  @media(max-width:720px){.herocols{grid-template-columns:1fr}}
+  .herocols h4{color:#fff;font-size:14px;margin:0 0 8px;text-transform:uppercase;letter-spacing:.05em;font-size:12.5px;opacity:.9}
+  .herocols ul{margin:0;padding-left:18px}
+  .herocols li{margin:4px 0;font-size:13.5px;color:rgba(255,255,255,.92)}
+  .savetable{width:100%;border-collapse:collapse;margin:6px 0 0;font-size:13px;background:#fff;border-radius:10px;overflow:hidden}
+  .savetable th{background:#0f2438;color:#fff;text-transform:none;font-size:12px}
+  .savetable td,.savetable th{padding:10px 11px;border-bottom:1px solid var(--line)}
+  .save{color:var(--green);font-weight:800}
+
+  /* ===================== VISUAL UPGRADE OVERRIDES ===================== */
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:linear-gradient(180deg,#e8edf3,#f4f7fa 280px);line-height:1.62;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1100px;padding:0 22px}
+  header.masthead{position:relative;overflow:hidden;padding:74px 0 64px;
+    background:radial-gradient(1200px 480px at 78% 120%,rgba(192,138,45,.30),transparent),linear-gradient(150deg,#0a2138,#0b3a44 55%,#0e6b63)}
+  header.masthead .skyline{position:absolute;left:0;right:0;bottom:0;width:100%;height:62%;z-index:0;opacity:.9}
+  header.masthead:after{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;
+    background:radial-gradient(135% 130% at 50% 30%,transparent 40%,rgba(5,14,24,.55) 100%)}
+  header.masthead .wrap{position:relative;z-index:2}
+  header.masthead .wrap{position:relative;z-index:1}
+  .kicker{letter-spacing:.2em;font-size:11px;font-weight:600;opacity:.85}
+  header.masthead h1{font-family:'Sora',sans-serif;font-size:35px;font-weight:800;letter-spacing:-.025em;line-height:1.12}
+  .meta{margin-top:22px;gap:10px}
+  .meta span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);padding:6px 13px;border-radius:999px}
+  nav.toc{background:rgba(255,255,255,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    z-index:30;padding:9px 0;box-shadow:0 2px 14px -7px rgba(12,39,64,.2)}
+  nav.toc .wrap{gap:3px 5px}
+  nav.toc a{padding:5px 11px;border-radius:8px;font-weight:500;transition:.15s}
+  nav.toc a:hover{background:var(--greenbg);color:var(--teal)}
+  section{border-radius:18px;padding:30px 34px;box-shadow:0 12px 34px -16px rgba(12,39,64,.22);animation:rise .5s ease both}
+  @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+  h2{font-family:'Sora',sans-serif;font-size:24px;font-weight:800;letter-spacing:-.02em;padding-left:17px;position:relative}
+  h2:before{content:"";position:absolute;left:0;top:3px;bottom:3px;width:5px;border-radius:999px;
+    background:linear-gradient(180deg,var(--teal2),var(--teal))}
+  .hero h2{padding-left:0}.hero h2:before{display:none}
+  h3{font-family:'Sora',sans-serif;font-size:17px;font-weight:700;color:var(--navy);margin-top:26px}
+  a{text-decoration:none}a:hover{text-decoration:underline}
+  .badge{padding:3px 10px;font-size:11px}
+  .b-grey{background:#eef1f5;color:#516072}
+  th{background:#f4f7fa;color:#3a4757;font-size:11px;letter-spacing:.04em}
+  tr:hover td{background:#f8fafc}
+  .scroller{border-radius:12px;box-shadow:0 2px 10px -4px rgba(12,39,64,.14)}
+  .scroller table{min-width:1120px}
+  @media(max-width:720px){.scroller table{min-width:760px}}
+  .card{border-radius:14px;box-shadow:0 2px 10px -4px rgba(12,39,64,.14);transition:.18s}
+  .card:hover{box-shadow:0 14px 34px -16px rgba(12,39,64,.24);transform:translateY(-2px)}
+  .card.top{border-color:#a9ddd4;background:linear-gradient(180deg,#f3fbf9,#fff)}
+  .gcard{border-radius:14px;box-shadow:0 2px 10px -4px rgba(12,39,64,.14);transition:.18s}
+  .gcard:hover{box-shadow:0 14px 34px -16px rgba(12,39,64,.24);transform:translateY(-3px)}
+  .gcard .thumb{height:118px;font-family:'Sora',sans-serif}
+  details{border-radius:12px}
+  .disclaimer{border-radius:12px;background:#fff8e8;border-color:#f0d999}
+  /* fix: savings table cells were inheriting the hero's white text */
+  .savetable td{color:var(--ink)}
+  .savetable td b{color:var(--navy)}
+  .savetable td.save,.savetable td .save{color:var(--green)}
+  .savetable tr:hover td{background:#f3fbf9}
+  /* review-count chip on ranking cards */
+  .reviews{font-size:12.5px;font-weight:600;color:#33404f;margin:-2px 0 9px;display:flex;align-items:center;gap:6px}
+  .reviews .star{color:#e8a93b}
+  .reviews .rc{color:var(--muted);font-weight:500}
+
+  /* ----- emoji section heads ----- */
+  .secthead{display:flex;align-items:center;gap:11px;margin:30px 0 4px;font-family:'Sora',sans-serif;
+    font-weight:700;font-size:17px;color:var(--navy)}
+  .secthead .ic{width:36px;height:36px;border-radius:11px;display:flex;align-items:center;justify-content:center;
+    font-size:18px;flex:0 0 auto}
+  .ic-hair{background:linear-gradient(135deg,#0e7c70,#13b3a4);color:#fff}
+  .ic-face{background:linear-gradient(135deg,#0c2740,#3b6ea5);color:#fff}
+  .ic-bbl{background:linear-gradient(135deg,#be123c,#fb7185);color:#fff}
+  .secthead small{font-weight:600;font-size:12px;color:var(--muted);font-family:'Inter',sans-serif}
+
+  /* ----- ranking cards ----- */
+  .ranklist{display:flex;flex-direction:column;gap:12px;margin:12px 0 6px}
+  .rankrow{display:flex;gap:16px;background:#fff;border:1px solid var(--line);border-radius:15px;
+    padding:16px 18px 16px 16px;box-shadow:0 2px 10px -4px rgba(12,39,64,.13);transition:.18s;position:relative;overflow:hidden}
+  .rankrow:hover{box-shadow:0 16px 36px -18px rgba(12,39,64,.28);transform:translateY(-2px)}
+  .medal{flex:0 0 auto;width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+    font-family:'Sora',sans-serif;font-weight:800;font-size:23px;color:#fff;box-shadow:0 5px 14px -4px rgba(0,0,0,.35)}
+  .m1{background:linear-gradient(135deg,#c69a30,#f2d171)}
+  .m2{background:linear-gradient(135deg,#8593a3,#c4cdd7)}
+  .m3{background:linear-gradient(135deg,#b06f3c,#e3a673)}
+  .m4,.m5{background:linear-gradient(135deg,#0e7c70,#13b3a4)}
+  .rankmain{flex:1;min-width:0}
+  .rankhead{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:7px}
+  .rankname{font-family:'Sora',sans-serif;font-weight:700;font-size:16px;color:var(--navy)}
+  .pricechip{background:var(--navy);color:#fff;font-weight:700;font-size:11.5px;padding:4px 12px;border-radius:999px;margin-left:auto;white-space:nowrap}
+  .contactline{font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:3px 16px;margin-bottom:10px}
+  .contactline span,.contactline a{white-space:nowrap}
+  .rankwhy{background:#f4f8fb;border-left:3px solid var(--teal2);border-radius:9px;padding:10px 13px;font-size:13px;line-height:1.55}
+  .rankwhy .lbl{font-weight:800;color:var(--teal);font-family:'Sora',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.05em;margin-right:5px}
+  @media(max-width:560px){.rankrow{flex-direction:column;gap:11px}.pricechip{margin-left:0}}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <svg class="skyline" viewBox="0 0 1440 360" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <linearGradient id="sil" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#10454c"/><stop offset="1" stop-color="#072028"/>
+      </linearGradient>
+      <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+        <stop offset="0" stop-color="#f3c878" stop-opacity="0.5"/><stop offset="1" stop-color="#f3c878" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#0c3a44"/><stop offset="1" stop-color="#0a2b34"/>
+      </linearGradient>
+    </defs>
+    <circle cx="930" cy="300" r="250" fill="url(#sun)"/>
+    <g fill="url(#sil)">
+      <!-- left low buildings -->
+      <rect x="0" y="276" width="60" height="40"/><rect x="48" y="262" width="40" height="54"/>
+      <rect x="86" y="284" width="44" height="32"/>
+      <!-- Galata tower -->
+      <rect x="158" y="150" width="28" height="164"/><rect x="151" y="196" width="42" height="9"/>
+      <polygon points="158,150 186,150 172,108"/><circle cx="172" cy="104" r="3.5"/>
+      <!-- buildings -->
+      <rect x="210" y="280" width="40" height="36"/><rect x="248" y="266" width="34" height="50"/>
+      <rect x="300" y="286" width="60" height="30"/>
+      <!-- small mosque left -->
+      <path d="M372 268 a34 34 0 0 1 68 0 Z"/><rect x="372" y="268" width="68" height="48"/>
+      <rect x="406" y="206" width="0" height="0"/><line x1="406" y1="234" x2="406" y2="214" stroke="#10454c" stroke-width="3"/><circle cx="406" cy="211" r="3"/>
+      <rect x="360" y="214" width="7" height="102"/><polygon points="356.5,214 370.5,214 363.5,196"/>
+      <rect x="445" y="214" width="7" height="102"/><polygon points="441.5,214 455.5,214 448.5,196"/>
+      <!-- grand central mosque -->
+      <rect x="556" y="250" width="168" height="66"/>
+      <path d="M582 250 a58 58 0 0 1 116 0 Z"/>
+      <path d="M566 250 a30 30 0 0 1 60 0 Z"/><path d="M654 250 a30 30 0 0 1 60 0 Z"/>
+      <line x1="640" y1="192" x2="640" y2="172" stroke="#10454c" stroke-width="4"/><circle cx="640" cy="168" r="5"/>
+      <!-- four minarets -->
+      <rect x="548" y="150" width="8" height="166"/><rect x="544" y="206" width="16" height="7"/><polygon points="544,150 560,150 552,120"/><circle cx="552" cy="116" r="3"/>
+      <rect x="600" y="138" width="8" height="178"/><rect x="596" y="198" width="16" height="7"/><polygon points="596,138 612,138 604,106"/><circle cx="604" cy="102" r="3"/>
+      <rect x="672" y="138" width="8" height="178"/><rect x="668" y="198" width="16" height="7"/><polygon points="668,138 684,138 676,106"/><circle cx="676" cy="102" r="3"/>
+      <rect x="724" y="150" width="8" height="166"/><rect x="720" y="206" width="16" height="7"/><polygon points="720,150 736,150 728,120"/><circle cx="728" cy="116" r="3"/>
+      <!-- mid buildings -->
+      <rect x="770" y="284" width="56" height="32"/><rect x="812" y="270" width="34" height="46"/>
+      <!-- right mosque -->
+      <rect x="936" y="262" width="128" height="54"/>
+      <path d="M954 262 a46 46 0 0 1 92 0 Z"/>
+      <path d="M940 262 a22 22 0 0 1 44 0 Z"/><path d="M1016 262 a22 22 0 0 1 44 0 Z"/>
+      <line x1="1000" y1="216" x2="1000" y2="200" stroke="#10454c" stroke-width="3"/><circle cx="1000" cy="197" r="4"/>
+      <rect x="930" y="172" width="7" height="144"/><rect x="926" y="226" width="15" height="6"/><polygon points="926,172 941,172 933.5,146"/><circle cx="933.5" cy="142" r="2.6"/>
+      <rect x="1058" y="172" width="7" height="144"/><rect x="1054" y="226" width="15" height="6"/><polygon points="1054,172 1069,172 1061.5,146"/><circle cx="1061.5" cy="142" r="2.6"/>
+      <!-- right low buildings -->
+      <rect x="1100" y="282" width="48" height="34"/><rect x="1140" y="268" width="34" height="48"/>
+      <rect x="1182" y="286" width="58" height="30"/>
+      <!-- lone minaret -->
+      <rect x="1255" y="206" width="7" height="110"/><rect x="1251" y="250" width="15" height="6"/><polygon points="1251,206 1266,206 1258.5,186"/><circle cx="1258.5" cy="182" r="2.6"/>
+      <rect x="1290" y="288" width="60" height="28"/><rect x="1336" y="276" width="40" height="40"/>
+      <!-- Maiden's tower in the water -->
+      <ellipse cx="1398" cy="318" rx="30" ry="5"/>
+      <rect x="1390" y="282" width="16" height="36"/><path d="M1388 282 a10 10 0 0 1 20 0 Z"/>
+      <line x1="1398" y1="272" x2="1398" y2="262" stroke="#10454c" stroke-width="2.5"/><circle cx="1398" cy="260" r="3"/>
+    </g>
+    <rect x="0" y="316" width="1440" height="44" fill="url(#water)"/>
+    <g stroke="#7fd3c9" stroke-opacity="0.10" stroke-width="2">
+      <line x1="560" y1="326" x2="720" y2="326"/><line x1="600" y1="334" x2="690" y2="334"/>
+      <line x1="960" y1="328" x2="1050" y2="328"/><line x1="150" y1="330" x2="230" y2="330"/>
+      <line x1="1360" y1="330" x2="1430" y2="330"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="kicker">Confidential Due-Diligence Investigation · Istanbul, Turkey</div>
+    <h1>Cosmetic Surgery & Hair Restoration — Provider Investigation</h1>
+    <p>An evidence-based, best-value comparison for Jeremy (hair transplant, eyebrows, mid-facelift) and Vanessa (subtle "skinny BBL"), pitting Asli Tarcan's quotes against budget-tier, surgeon-led alternatives — every recommendation screened for clean outcomes and a competing direct quote.</p>
+    <div class="meta">
+      <span><b>Prepared:</b> 17 June 2026</span>
+      <span><b>Budget posture:</b> ~$3k hair / ~$7.5k facelift as a rough ceiling</span>
+      <span><b>Patients:</b> Jeremy (50, prior transplant, ~2–3k grafts) · Vanessa (lean/fit)</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <a href="#start"><b>★ Start Here — Contacts &amp; Top 5s</b></a>
+    <a href="#pool">Vetted Pool (20+)</a>
+    <a href="#influencer">Influencer Packages</a>
+    <a href="#brief">Decision Brief</a>
+    <a href="#flags">Red Flags</a>
+    <a href="#asli">Asli Tarcan</a>
+    <a href="#hair">Hair</a>
+    <a href="#face">Facelift</a>
+    <a href="#bbl">Skinny-BBL</a>
+    <a href="#price">Price</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#verify">Verification</a>
+    <a href="#questions">Clinic Questions</a>
+    <a href="#negotiate">Negotiation</a>
+    <a href="#checklist">Go/No-Go</a>
+    <a href="#master">Master Table</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<!-- ============ METHODOLOGY HERO ============ -->
+<section class="hero">
+  <h2>How this shortlist was built</h2>
+  <p class="sub">Before you read a single recommendation, here's the work behind it — and what it saves you.</p>
+
+  <div class="statgrid">
+    <div class="stat"><div class="statnum">300<small>+</small></div><div class="statlabel">web pages &amp; sources read by the research agents</div></div>
+    <div class="stat"><div class="statnum">35<small>+</small></div><div class="statlabel">clinics &amp; surgeons investigated across Istanbul</div></div>
+    <div class="stat"><div class="statnum">29</div><div class="statlabel">vetted into the working pool with verified contacts</div></div>
+    <div class="stat"><div class="statnum">15</div><div class="statlabel">finalists — top 5 in each of the 3 procedures</div></div>
+    <div class="stat"><div class="statnum">7</div><div class="statlabel">specialist research agents run in parallel</div></div>
+    <div class="stat"><div class="statnum">9</div><div class="statlabel">independent review platforms cross-checked</div></div>
+    <div class="stat"><div class="statnum">6</div><div class="statlabel">official medical registries used to verify credentials</div></div>
+    <div class="stat"><div class="statnum">~25</div><div class="statlabel">data points checked per provider</div></div>
+    <div class="stat"><div class="statnum">2</div><div class="statlabel">languages searched (English + Turkish)</div></div>
+  </div>
+
+  <div class="herocols">
+    <div>
+      <h4>What we checked on every clinic</h4>
+      <ul>
+        <li><b>Who actually operates</b> — surgeon vs. technician, who opens channels, extracts, implants, injects</li>
+        <li><b>Credentials at the source</b> — EBOPRAS, TPRECD, ABHRS, ISHRS, IAHRS, Turkish Ministry of Health</li>
+        <li><b>Facility &amp; safety</b> — named hospital, JCI accreditation, anesthesiologist, BBL ultrasound + fat plane</li>
+        <li><b>Real reputation</b> — Google, Trustpilot, RealSelf, WhatClinic, Reddit, Hair Restoration Network, Şikayetvar (TR), YouTube/IG diaries</li>
+        <li><b>Complication &amp; fatality screening</b> — anyone with documented deaths or botched-outcome patterns was cut</li>
+        <li><b>Transparent, itemized pricing</b> in USD / EUR / GBP / TRY, labeled by source</li>
+      </ul>
+    </div>
+    <div>
+      <h4>What the recommendations are based on</h4>
+      <ul>
+        <li>A <b>100-point score</b>: surgeon credentials (20) · personal involvement (15) · facility &amp; anesthesia safety (15) · procedure experience (15) · long-term independent outcomes (10) · review quality (10) · follow-up (5) · pricing transparency (5) · value (5)</li>
+        <li><b>Automatic penalties</b> for unnamed surgeons, unverifiable credentials, undisclosed technician surgery, or credible complication reports</li>
+        <li><b>Hard disqualifiers</b> for BBL: unidentified injectables, permanent fillers, fat in/under the muscle, no ultrasound</li>
+        <li><b>Value, not just cheapest</b> — every finalist is budget-tier <em>and</em> clean-reputation</li>
+      </ul>
+    </div>
+  </div>
+
+  <h4 style="color:#fff;text-transform:uppercase;letter-spacing:.05em;font-size:12.5px;opacity:.9;margin:22px 0 6px">What the value picks save you (approximate, same procedure)</h4>
+  <table class="savetable">
+    <thead><tr><th>Procedure</th><th>Your value pick</th><th>Typical Istanbul (other surgeons)</th><th>US / UK equivalent</th><th>You save vs US/UK</th></tr></thead>
+    <tbody>
+      <tr><td>Hair transplant + eyebrows (2–3k grafts)</td><td><b>~$3,700</b> (Dr. Yaman)</td><td>$3,000–$6,000</td><td>$13,000–$20,000</td><td class="save">~$10k–16k</td></tr>
+      <tr><td>Deep-plane facelift</td><td><b>~$5,400</b> (Dr. Mezdeği)</td><td>$7,500–$18,000</td><td>$25,000–$50,000</td><td class="save">~$20k–44k</td></tr>
+      <tr><td>Skinny / mini BBL</td><td><b>~$4,900</b> (Dr. Mezdeği)</td><td>$4,500–$7,000</td><td>$13,000–$20,000</td><td class="save">~$8k–15k</td></tr>
+      <tr style="background:#f0f7f4"><td><b>All three combined</b></td><td><b>~$14,000</b></td><td>~$15,000–$31,000</td><td><b>~$51,000–$90,000</b></td><td class="save">~$37k–76k</td></tr>
+    </tbody>
+  </table>
+  <p class="sub" style="margin-top:10px;font-size:12px">Figures are approximate, drawn from published clinic prices, patient-reported quotes, and market aggregators (17 Jun 2026); they exclude travel/hotel where not bundled. Versus the current Asli Tarcan quotes, the value facelift pick alone comes in <b>~$2,100 under the $7,500 quote</b> — with a named, board-verified surgeon you can check on the registry.</p>
+</section>
+
+<!-- ============ START HERE: TOP 5s + CONTACTS ============ -->
+<section id="start">
+  <h2>★ Start Here — Top 5 Best Value + Contacts</h2>
+  <p class="sub">The actionable shortlist up top, ranked. Each is best-value, surgeon-involved where possible, and screened to exclude any clinic with documented fatal incidents or serious botched-outcome patterns. Every card shows pricing, WhatsApp, email, website, Instagram — and exactly why it landed at that rank. The deeper analysis sits further down.</p>
+
+  <div class="secthead"><span class="ic ic-hair">🧑</span> Jeremy — Hair Transplant + Eyebrows <small>· top 5 best value</small></div>
+  <div class="ranklist">
+
+    <div class="rankrow"><div class="medal m1">1</div><div class="rankmain">
+      <div class="rankhead"><span class="rankname">Dr. Resul Yaman</span> <span class="badge b-green">best value</span><span class="pricechip">~$2,700–2,900 +brow</span></div>
+      <div class="contactline"><span>📱 +90 545 600 12 34</span> <span>✉ info@resulyaman.com</span> <a href="https://resulyaman.com/">🌐 resulyaman.com</a> <a href="https://instagram.com/drresulyaman">📷 @drresulyaman</a></div>
+      <div class="reviews"><span class="star">★</span> IAHRS-listed <span class="rc">· RealSelf &amp; WhatClinic positive (smaller, high-quality base)</span></div>
+      <div class="rankwhy"><span class="lbl">Why #1</span> IAHRS-listed (independent, peer-vetted), and the surgeon personally does hairline design, channel-opening and the critical placement. Lowest verified all-in price with PRP + hotel bundled, strong long-term forum-documented results, and eyebrows at ~€1/graft — the best value in the pool. Only ask: get the doctor-led donor scan in writing.</div>
+    </div></div>
+
+    <div class="rankrow"><div class="medal m2">2</div><div class="rankmain">
+      <div class="rankhead"><span class="rankname">Dr. Emrah Çinik</span> <span class="badge b-blue">price-transparent</span><span class="pricechip">£1,995–£3,050</span></div>
+      <div class="contactline"><span>📱 +90 543 529 35 42</span> <span>✉ info@emrahcinik.com</span> <a href="https://emrahcinik.com/">🌐 emrahcinik.com</a> <a href="https://instagram.com/drcinik.global">📷 @drcinik.global</a></div>
+      <div class="reviews"><span class="star">★</span> 4.9 <span class="rc">· 5,800+ reviews (site) · 2,200 on WhatClinic</span></div>
+      <div class="rankwhy"><span class="lbl">Why #2</span> The most transparent fixed pricing in the market (no day-of upsell), 20+ years, ISHRS-affiliated. Sits just behind Yaman because it's a very high-volume operation — per-case doctor involvement is diluted — and it markets non-evidence-based exosome add-ons (decline them).</div>
+    </div></div>
+
+    <div class="rankrow"><div class="medal m3">3</div><div class="rankmain">
+      <div class="rankhead"><span class="rankname">Hermest / Dr. Ahmet Murat</span><span class="pricechip">€2,890</span></div>
+      <div class="contactline"><span>📱 +90 541 664 15 15</span> <span>✉ info@hermest.com.tr</span> <a href="https://www.hermestclinic.com/">🌐 hermestclinic.com</a> <a href="https://instagram.com/hermest.turkey">📷 @hermest.turkey</a></div>
+      <div class="reviews"><span class="star">★</span> 4.9 <span class="rc">· 950+ Google · 1,068 Trustpilot</span></div>
+      <div class="rankwhy"><span class="lbl">Why #3</span> Strong published package (≤4,000 grafts), 4.9 across 950+ Google reviews and a clean complaint record; the surgeon does planning and incisions. Ranked here because board credentials couldn't be independently verified and the lead doctor has a cardiology background — confirm exactly who performs the surgical steps.</div>
+    </div></div>
+
+    <div class="rankrow"><div class="medal m4">4</div><div class="rankmain">
+      <div class="rankhead"><span class="rankname">Dr. Serkan Aygın</span> <span class="badge b-grey">high-volume brand</span><span class="pricechip">~$3,500</span></div>
+      <div class="contactline"><span>📱 +90 555 100 40 40</span> <span>✉ info@drserkanaygin.com</span> <a href="https://www.drserkanaygin.com/">🌐 drserkanaygin.com</a> <a href="https://instagram.com/drserkanaygin">📷 @drserkanaygin</a></div>
+      <div class="reviews"><span class="star">★</span> 4.x <span class="rc">· thousands of reviews (Trustpilot &amp; WhatClinic)</span></div>
+      <div class="rankwhy"><span class="lbl">Why #4</span> A 22-year, heavily-reviewed brand with solid packages. Drops to #4 because the clinic uses several operating doctors, so your case may not be Dr. Aygın himself — confirm the named operator before booking.</div>
+    </div></div>
+
+    <div class="rankrow"><div class="medal m5">5</div><div class="rankmain">
+      <div class="rankhead"><span class="rankname">Cosmedica / Dr. Levent Acar</span> <span class="badge b-blue">influencer program</span><span class="pricechip">premium / sponsored</span></div>
+      <div class="contactline"><span>📱 +90 444 4267</span> <span>✉ info@cosmedica.com</span> <a href="https://cosmedica.com/">🌐 cosmedica.com</a> <a href="https://instagram.com/cosmedicaclinic">📷 @cosmedicaclinic</a></div>
+      <div class="reviews"><span class="star">★</span> high-volume <span class="rc">· thousands of reviews (Trustpilot/Google)</span></div>
+      <div class="rankwhy"><span class="lbl">Why #5</span> Included mainly for its documented influencer-sponsorship program (relevant if Jeremy has reach) plus a high-volume premium track record. Priced above the value tier, so it only becomes "value" if a collaboration discount applies.</div>
+    </div></div>
+
+  </div>
+  <p class="footnote">Eyebrow add-on (~250–400 grafts/brow) can be done same session; ~$1,000 is fair at Yaman/Hermest. Decline any exosome upcharge (not evidence-based). PRP is usually bundled free.</p>
+
+  <div class="secthead"><span class="ic ic-face">🧑</span> Jeremy — Facelift <small>· top 5 best value, clean-reputation</small></div>
+  <div class="ranklist">
+
+    <div class="rankrow"><div class="medal m1">1</div><div class="rankmain">
+      <div class="rankhead"><span class="rankname">Dr. Ali Mezdeği</span> <span class="badge b-green">best value</span><span class="pricechip">from €5,000</span></div>
+      <div class="contactline"><span>📱 +90 542 243 32 41</span> <span>✉ mezdegi@yahoo.com</span> <a href="https://www.alimezdegi.com/en/">🌐 alimezdegi.com</a> <a href="https://facebook.com/esteportklinik">📷 FB esteportklinik</a></div>
+      <div class="reviews"><span class="star">★</span> Clean record <span class="rc">· mostly clinic-channel reviews — ask for direct references</span></div>
+      <div class="rankwhy"><span class="lbl">Why #1</span> The only finalist with a published, under-ceiling <b>deep-plane</b> price, performed direct-to-surgeon, with a clean reputation (no botched pattern) and added jaw/maxillofacial expertise — the best safety-to-value ratio in the group.</div>
+    </div></div>
+
+    <div class="rankrow"><div class="medal m2">2</div><div class="rankmain">
+      <div class="rankhead"><span class="rankname">Dr. Fatih Ceran</span> <span class="badge b-green">EBOPRAS</span><span class="pricechip">quote</span></div>
+      <div class="contactline"><span>📱 +90 552 313 02 96</span> <span>✉ info@drfatihceran.com</span> <a href="https://drfatihceran.com/en/">🌐 drfatihceran.com</a> <a href="https://instagram.com/dr.fatihceran">📷 @dr.fatihceran</a></div>
+      <div class="reviews"><span class="star">★</span> Clean record <span class="rc">· ~1,100+ facelifts; older RealSelf positive, no complaint cluster</span></div>
+      <div class="rankwhy"><span class="lbl">Why #2</span> EBOPRAS + ISAPS + TSPRAS and face-focused — the strongest <b>verified</b> credentials in the value tier. Just behind Mezdeği only because he hasn't published a price (quote-only).</div>
+    </div></div>
+
+    <div class="rankrow"><div class="medal m3">3</div><div class="rankmain">
+      <div class="rankhead"><span class="rankname">Dr. Mehmet Solmaz</span> <span class="badge b-green">EBOPRAS</span><span class="pricechip">quote</span></div>
+      <div class="contactline"><span>📱 +90 533 561 22 92</span> <span>✉ info@drmehmetsolmaz.com</span> <a href="https://drmehmetsolmaz.com/en/">🌐 drmehmetsolmaz.com</a> <a href="https://instagram.com/dr.mehmetsolmaz">📷 @dr.mehmetsolmaz</a></div>
+      <div class="reviews"><span class="star">★</span> Clean <span class="rc">· RealSelf positive; one trivial wait-time complaint only</span></div>
+      <div class="rankwhy"><span class="lbl">Why #3</span> EBOPRAS (2021), deep-plane + neck lift, clean reputation. Third because his practice is broad (body/breast too) — confirm his facelift-specific volume.</div>
+    </div></div>
+
+    <div class="rankrow"><div class="medal m4">4</div><div class="rankmain">
+      <div class="rankhead"><span class="rankname">Prof. Erdem Tezel</span> <span class="badge b-grey">endoscopic</span><span class="pricechip">quote</span></div>
+      <div class="contactline"><span>📱 +90 532 767 22 35</span> <span>✉ ofis@erdemtezel.com</span> <a href="https://erdemtezel.com/en/">🌐 erdemtezel.com</a> <a href="https://instagram.com/prof.dr.erdemtezel">📷 @prof.dr.erdemtezel</a></div>
+      <div class="reviews"><span class="star">★</span> Long academic record <span class="rc">· published patient-comments page; no botched cluster</span></div>
+      <div class="rankwhy"><span class="lbl">Why #4</span> The surgeon who introduced endoscopic facial aesthetics to Turkey — the top authority for a <b>scarless mid-face lift</b>. Lower only because endoscopic can under-treat the heavier jowl/neck laxity common at 50, so it's anatomy-dependent.</div>
+    </div></div>
+
+    <div class="rankrow"><div class="medal m5">5</div><div class="rankmain">
+      <div class="rankhead"><span class="rankname">Dr. Yakup Avşar</span> <span class="badge b-grey">endoscopic</span><span class="pricechip">quote</span></div>
+      <div class="contactline"><span>📱 +90 530 315 25 39</span> <span>✉ bilgi@avsarestetik.com</span> <a href="https://avsarclinic.com/">🌐 avsarclinic.com</a> <a href="https://instagram.com/dravsar">📷 @dravsar</a></div>
+      <div class="reviews"><span class="star">★</span> Clean <span class="rc">· limited independent reviews; one isolated rhino review only</span></div>
+      <div class="rankwhy"><span class="lbl">Why #5</span> Endoscopic "Charm Lift," explicitly positioned for men in their 40s–50s with milder aging. Same caveat as Tezel, and his EBOPRAS status isn't confirmed.</div>
+    </div></div>
+
+  </div>
+  <p class="footnote">For a 50-yo man, ask each whether a true "mid-facelift" is right vs. deep-plane/SMAS ± neck lift. Endoscopic (Tezel/Avşar) suits milder mid-face descent, not heavy jowls.</p>
+
+  <div class="secthead"><span class="ic ic-bbl">💃</span> Vanessa — Skinny BBL <small>· top 5 best value, safety-screened</small></div>
+  <div class="ranklist">
+
+    <div class="rankrow"><div class="medal m1">1</div><div class="rankmain">
+      <div class="rankhead"><span class="rankname">Op. Dr. Ali Mezdeği</span> <span class="badge b-green">best value · "Mini BBL"</span><span class="pricechip">from €4,500</span></div>
+      <div class="contactline"><span>📱 +90 542 243 32 41</span> <span>✉ mezdegi@yahoo.com</span> <a href="https://esteport.com/en/bbl-surgery-turkey.html">🌐 esteport.com</a> <a href="https://facebook.com/esteportklinik">📷 FB esteportklinik</a></div>
+      <div class="reviews"><span class="star">★</span> Clean <span class="rc">· mostly clinic-channel reviews — ask for direct references</span></div>
+      <div class="rankwhy"><span class="lbl">Why #1</span> Publishes a dedicated <b>"Mini BBL"</b> (ideal for a subtle, lean-patient result), an explicit ultrasound-guided + subcutaneous-only protocol, and a named price — the clearest combination of safety, the right subtle approach, and value.</div>
+    </div></div>
+
+    <div class="rankrow"><div class="medal m2">2</div><div class="rankmain">
+      <div class="rankhead"><span class="rankname">Doç. Dr. Sedat Tatar</span> <span class="badge b-green">safest protocol</span><span class="pricechip">quote</span></div>
+      <div class="contactline"><span>📱 +90 555 100 10 83 (WA)</span> <a href="https://drsedattatar.com/">🌐 drsedattatar.com</a> <a href="https://instagram.com/drsedattatar">📷 @drsedattatar</a></div>
+      <div class="reviews"><span class="star">★</span> 4.9 <span class="rc">· 126 RealSelf · 86 WhatClinic; no severe-complication pattern</span></div>
+      <div class="rankwhy"><span class="lbl">Why #2</span> Publishes the most detailed written safety protocol (ultrasound, above-muscle, JCI hospital), FEBOPRAS/FACS claimed. Just under Mezdeği because price is quote-only and per-case ultrasound use should be confirmed.</div>
+    </div></div>
+
+    <div class="rankrow"><div class="medal m3">3</div><div class="rankmain">
+      <div class="rankhead"><span class="rankname">Dr. Erman Ak</span> <span class="badge b-green">EBOPRAS</span><span class="pricechip">quote</span></div>
+      <div class="contactline"><span>📱 +90 552 362 93 98 (WA)</span> <a href="https://drermanak.com/en/">🌐 drermanak.com</a> <a href="https://instagram.com/opdrermanak">📷 @opdrermanak</a></div>
+      <div class="reviews"><span class="star">★</span> 5.0 <span class="rc">· 193 RealSelf · 52 Trustpilot; outcome-focused, clean</span></div>
+      <div class="rankwhy"><span class="lbl">Why #3</span> EBOPRAS (2021), founded a hospital plastic-surgery department, a natural-projection reputation. Ranked here because his pages don't explicitly state ultrasound-guided subcutaneous technique — confirm it.</div>
+    </div></div>
+
+    <div class="rankrow"><div class="medal m4">4</div><div class="rankmain">
+      <div class="rankhead"><span class="rankname">Dr. Fatih Irmak</span> <span class="badge b-green">EBOPRAS · BBL focus</span><span class="pricechip">quote</span></div>
+      <div class="contactline"><span>📱 +90 532 164 89 63</span> <span>✉ dr.fatihirmak@gmail.com</span> <a href="https://www.drfatihirmak.com/">🌐 drfatihirmak.com</a> <a href="https://instagram.com/fatihirmak_">📷 @fatihirmak_</a></div>
+      <div class="reviews"><span class="star">★</span> Clean <span class="rc">· limited independent English-language reviews to verify</span></div>
+      <div class="rankwhy"><span class="lbl">Why #4</span> EBOPRAS with a dedicated BBL/body focus — strong credentials for autologous fat transfer. Lower only because there's less independent English-language outcome documentation to verify.</div>
+    </div></div>
+
+    <div class="rankrow"><div class="medal m5">5</div><div class="rankmain">
+      <div class="rankhead"><span class="rankname">Dr. Cengizhan Ekizceli</span> <span class="badge b-blue">influencer-forward</span><span class="pricechip">quote</span></div>
+      <div class="contactline"><span>📱 +90 505 312 18 10 (WA)</span> <a href="https://drcengizhan.com/">🌐 drcengizhan.com</a> <a href="https://instagram.com/dr.cengizhanekizceli">📷 @dr.cengizhanekizceli</a></div>
+      <div class="reviews"><span class="star">★</span> 4.5 <span class="rc">· 123 RealSelf (all 5★); ~140k IG following</span></div>
+      <div class="rankwhy"><span class="lbl">Why #5</span> EBOPRAS, operates in JCI hospitals, and the most influencer-forward surgeon (best chance of a collaboration discount for Vanessa). Fifth because his public profile leans forehead-reduction/rhino and his email/ultrasound protocol need confirming.</div>
+    </div></div>
+
+  </div>
+  <p class="footnote"><b>Vanessa is lean</b> — the honest first question to every surgeon is whether she has enough donor fat for a worthwhile result. Non-negotiables: her own fat only (no fillers/silicone/biopolymers), real-time ultrasound, fat above the muscle, named anesthesiologist, JCI hospital. See the BBL question script lower down.</p>
+</section>
+
+<!-- ============ INFLUENCER PACKAGES ============ -->
+<section id="influencer">
+  <h2>📸 Influencer / Content-Creator Packages</h2>
+  <p class="sub">Vanessa (and Jeremy) may qualify for a discount or sponsored procedure in exchange for posting their journey. Turkish clinics do these collaborations heavily — but most are <b>unadvertised, so you have to ask directly.</b></p>
+
+  <div class="grid">
+    <div class="card top"><h4>Documented programs (written, public)</h4>
+      <div class="kv"><b>Cosmedica (hair):</b> a real "Collaborate" program — sponsored procedure + flights/hotel/transfers for you and a companion + financial incentive. Asks <b>50k+ followers</b> (YouTube-leaning). Apply: <b>influencer@cosmedica.com</b> / WA +49 157 92311576. <span class="footnote">Best fit for Jeremy's hair if he has reach.</span></div>
+      <div class="kv"><b>Smile Hair Clinic (hair):</b> referral/affiliate model — you get a promo code + <b>€100 per referred patient</b> (not a free procedure). info@smilehairclinic.com.</div>
+    </div>
+    <div class="card"><h4>How it actually works (ask directly)</h4>
+      <ol style="margin:0;font-size:13.5px">
+        <li><b>Photo-release discount</b> — modest (~10–20%, anecdotal) for letting the clinic use your before/after and/or you posting. Common, never advertised — negotiate it.</li>
+        <li><b>Affiliate / promo code</b> — you pay, earn commission per referral (Smile's model).</li>
+        <li><b>Full sponsored ("iş birliği")</b> — free/heavily discounted in exchange for committed content; needs real reach (50k+ is a good benchmark).</li>
+      </ol>
+    </div>
+    <div class="card"><h4>For Vanessa's BBL specifically</h4>
+      <div class="kv">Least public documentation here. <b>Dr. Cengizhan Ekizceli</b> is the most influencer-forward (very active IG patient journeys) and the most likely to entertain a collaboration — ask directly. No published program at Mezdeği, Tatar, Ak, or Irmak.</div>
+      <div class="kv footnote">Caution: sponsored <b>body</b> surgery carries far more medical risk than hair work and has drawn regulatory/safety scrutiny in Turkey — never let a discount override the safety checklist.</div>
+    </div>
+    <div class="card"><h4>The ask (DM / WhatsApp script)</h4>
+      <div class="msg" style="margin:0">"I'll document my full journey (pre-op, op day, recovery, X-month results) as Reels/Shorts and grant photo/video release — what collaboration or content discount can you offer?" <span class="footnote">Turkish term for these deals: <b>"iş birliği."</b> Get sponsored terms + photo-consent scope in writing.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VETTED POOL (20+) ============ -->
+<section id="pool">
+  <h2>Vetted Pool — 20+ Clinics to Pull From</h2>
+  <p class="sub">Everything we went through (35+ providers across the three categories), narrowed to a working bench of 24 with contacts and a one-line standing. <span class="badge b-green">value</span> = budget shortlist · <span class="badge b-blue">premium</span> = strong but pricey · <span class="badge b-amber">caution</span> = a flag to weigh · <span class="badge b-grey">unverified</span> = contact from directory, confirm before use.</p>
+
+  <h4>Hair + Eyebrows</h4>
+  <div class="scroller">
+  <table>
+    <thead><tr><th>Clinic / Doctor</th><th>Standing</th><th>Price</th><th>WhatsApp</th><th>Email</th><th>Website / IG</th></tr></thead>
+    <tbody>
+      <tr><td>Dr. Resul Yaman</td><td><span class="badge b-green">value · IAHRS</span></td><td>~$2.7–2.9k</td><td>+90 545 600 12 34</td><td>info@resulyaman.com</td><td><a href="https://resulyaman.com/">site</a> · <a href="https://instagram.com/drresulyaman">IG</a></td></tr>
+      <tr><td>Dr. Emrah Çinik</td><td><span class="badge b-green">value · transparent</span></td><td>£1,995–3,050</td><td>+90 543 529 35 42</td><td>info@emrahcinik.com</td><td><a href="https://emrahcinik.com/">site</a> · <a href="https://instagram.com/drcinik.global">IG</a></td></tr>
+      <tr><td>Hermest / Dr. Ahmet Murat</td><td><span class="badge b-green">value</span></td><td>€2,890</td><td>+90 541 664 15 15</td><td>info@hermest.com.tr</td><td><a href="https://www.hermestclinic.com/">site</a> · <a href="https://instagram.com/hermest.turkey">IG</a></td></tr>
+      <tr><td>Dr. Serkan Aygın</td><td><span class="badge b-grey">high-volume brand</span></td><td>~$3,500</td><td>+90 555 100 40 40</td><td>info@drserkanaygin.com</td><td><a href="https://www.drserkanaygin.com/">site</a> · <a href="https://instagram.com/drserkanaygin">IG</a></td></tr>
+      <tr><td>Cosmedica / Dr. Levent Acar</td><td><span class="badge b-blue">premium · influencer program</span></td><td>premium</td><td>+90 444 4267</td><td>info@cosmedica.com</td><td><a href="https://cosmedica.com/">site</a> · <a href="https://instagram.com/cosmedicaclinic">IG</a></td></tr>
+      <tr><td>Smile Hair Clinic</td><td><span class="badge b-amber">review-solicitation flag</span></td><td>~$3k (brows +)</td><td>+90 549 149 24 00</td><td>info@smilehairclinic.com</td><td><a href="https://www.smilehairclinic.com/en/">site</a> · <a href="https://instagram.com/smilehairclinic">IG</a></td></tr>
+      <tr><td>Dr. Özlem Biçer</td><td><span class="badge b-blue">premium · ABHRS, 1/day</span></td><td>~$14k</td><td>+90 532 667 78 83 <span class="badge b-grey">verify</span></td><td>info@ozlembicer.com</td><td><a href="https://ozlembicer.com/en">site</a> · <a href="https://instagram.com/dr.ozlembicerclinic">IG</a></td></tr>
+      <tr><td>DrT / Dr. Tayfun Oğuzoğlu</td><td><span class="badge b-amber">complication threads · Ankara</span></td><td>~$4.5–5.5k</td><td>+90 542 470 60 31</td><td>info@drthair.com</td><td><a href="https://drthair.com/">site</a> · <a href="https://instagram.com/drthairtransplant">IG</a></td></tr>
+      <tr><td>ASMED / Dr. Koray Erdoğan</td><td><span class="badge b-blue">elite · over-spec for small case</span></td><td>~$9–13k</td><td>+90 549 624 68 26 <span class="badge b-grey">verify</span></td><td>info@asmed.com.tr <span class="badge b-grey">verify</span></td><td><a href="https://www.hairtransplantfue.org/">site</a> · <a href="https://instagram.com/asmedhairtransplant">IG</a></td></tr>
+      <tr><td>Vera Clinic</td><td><span class="badge b-grey">high-volume mill</span></td><td>package</td><td>+90 542 743 54 08</td><td>info@veraclinic.net</td><td><a href="https://veraclinic.net/">site</a> · <a href="https://instagram.com/veraclinic">IG</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h4>Facelift / Facial Rejuvenation</h4>
+  <div class="scroller">
+  <table>
+    <thead><tr><th>Surgeon</th><th>Standing</th><th>Price</th><th>WhatsApp</th><th>Email</th><th>Website / IG</th></tr></thead>
+    <tbody>
+      <tr><td>Dr. Ali Mezdeği</td><td><span class="badge b-green">value · deep-plane</span></td><td>from €5,000</td><td>+90 542 243 32 41</td><td>mezdegi@yahoo.com</td><td><a href="https://www.alimezdegi.com/en/">site</a></td></tr>
+      <tr><td>Dr. Fatih Ceran</td><td><span class="badge b-green">value · EBOPRAS</span></td><td>quote</td><td>+90 552 313 02 96</td><td>info@drfatihceran.com</td><td><a href="https://drfatihceran.com/en/">site</a> · <a href="https://instagram.com/dr.fatihceran">IG</a></td></tr>
+      <tr><td>Dr. Mehmet Solmaz</td><td><span class="badge b-green">value · EBOPRAS</span></td><td>quote</td><td>+90 533 561 22 92</td><td>info@drmehmetsolmaz.com</td><td><a href="https://drmehmetsolmaz.com/en/">site</a> · <a href="https://instagram.com/dr.mehmetsolmaz">IG</a></td></tr>
+      <tr><td>Prof. Erdem Tezel</td><td><span class="badge b-green">value · endoscopic</span></td><td>quote</td><td>+90 532 767 22 35</td><td>ofis@erdemtezel.com</td><td><a href="https://erdemtezel.com/en/">site</a> · <a href="https://instagram.com/prof.dr.erdemtezel">IG</a></td></tr>
+      <tr><td>Dr. Yakup Avşar</td><td><span class="badge b-green">value · endoscopic</span></td><td>quote</td><td>+90 530 315 25 39</td><td>bilgi@avsarestetik.com</td><td><a href="https://avsarclinic.com/">site</a> · <a href="https://instagram.com/dravsar">IG</a></td></tr>
+      <tr><td>Prof. M. V. Karaaltın</td><td><span class="badge b-blue">premium · triple-board</span></td><td>quote</td><td>+90 546 553 32 85 <span class="badge b-grey">verify</span></td><td>dr@drkaraaltin.com <span class="badge b-grey">verify</span></td><td><a href="https://drkaraaltin.com/">site</a></td></tr>
+      <tr><td>Dr. Metin Kerem</td><td><span class="badge b-blue">premium · deep-plane</span></td><td>~$13–18k</td><td>+90 533 426 32 26 <span class="badge b-grey">verify</span></td><td>contact@metinkerem.com <span class="badge b-grey">verify</span></td><td><a href="https://www.metinkerem.com/en/">site</a></td></tr>
+      <tr><td>Dr. Cem Berkay Sinaci (CBS)</td><td><span class="badge b-amber">a botched-facelift report</span></td><td>quote</td><td>+90 546 822 95 70</td><td>info@doctorcbs.com</td><td><a href="https://doctorcbs.com/">site</a> · <a href="https://instagram.com/doctorcbs">IG</a></td></tr>
+      <tr><td>Dr. Ergin Er / IAC</td><td><span class="badge b-grey">center-style group</span></td><td>quote</td><td>ph +90 212 266 07 42</td><td>bilgi@ia-center.com <span class="badge b-grey">verify</span></td><td><a href="https://istanbulaestheticcenter.com/">site</a></td></tr>
+      <tr><td>Prof. Süleyman Taş</td><td><span class="badge b-amber">complaint/legal pattern</span></td><td>quote</td><td>—</td><td>—</td><td><a href="https://www.drsuleymantas.com/">site</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h4>Skinny BBL / Body</h4>
+  <div class="scroller">
+  <table>
+    <thead><tr><th>Surgeon</th><th>Standing</th><th>Price</th><th>WhatsApp</th><th>Email</th><th>Website / IG</th></tr></thead>
+    <tbody>
+      <tr><td>Op. Dr. Ali Mezdeği</td><td><span class="badge b-green">value · "Mini BBL"</span></td><td>from €4,500</td><td>+90 542 243 32 41</td><td>mezdegi@yahoo.com</td><td><a href="https://esteport.com/en/bbl-surgery-turkey.html">site</a></td></tr>
+      <tr><td>Doç. Dr. Sedat Tatar</td><td><span class="badge b-green">safest protocol</span></td><td>quote</td><td>+90 555 100 10 83</td><td><span class="badge b-grey">use WA</span></td><td><a href="https://drsedattatar.com/">site</a> · <a href="https://instagram.com/drsedattatar">IG</a></td></tr>
+      <tr><td>Dr. Erman Ak</td><td><span class="badge b-green">value · EBOPRAS</span></td><td>quote</td><td>+90 552 362 93 98</td><td><span class="badge b-grey">use WA</span></td><td><a href="https://drermanak.com/en/">site</a> · <a href="https://instagram.com/opdrermanak">IG</a></td></tr>
+      <tr><td>Dr. Fatih Irmak</td><td><span class="badge b-green">EBOPRAS · BBL focus</span></td><td>quote</td><td>+90 532 164 89 63</td><td>dr.fatihirmak@gmail.com</td><td><a href="https://www.drfatihirmak.com/">site</a> · <a href="https://instagram.com/fatihirmak_">IG</a></td></tr>
+      <tr><td>Dr. Cengizhan Ekizceli</td><td><span class="badge b-blue">EBOPRAS · influencer-forward</span></td><td>quote</td><td>+90 505 312 18 10</td><td><span class="badge b-grey">use WA</span></td><td><a href="https://drcengizhan.com/">site</a> · <a href="https://instagram.com/dr.cengizhanekizceli">IG</a></td></tr>
+      <tr><td>Dr. Mehmet Köksal</td><td><span class="badge b-grey">mid-market</span></td><td>quote</td><td>+90 532 212 55 82</td><td>doktormehmetkoksal@gmail.com</td><td><a href="https://drmehmetkoksal.com/en/">site</a> · <a href="https://instagram.com/drmehmetkoksal">IG</a></td></tr>
+      <tr><td>Dr. Orhan Fahri Demir</td><td><span class="badge b-grey">hospital-affiliated · verify</span></td><td>quote</td><td>—</td><td>support@orhanfahridemir.com <span class="badge b-grey">verify</span></td><td><a href="https://orhanfahridemir.com/en/">site</a></td></tr>
+      <tr><td>Dr. Bülent Cihantimur</td><td><span class="badge b-amber">proprietary method · caution</span></td><td>premium</td><td>—</td><td>via site</td><td><a href="https://www.estetikinternational.com/">site</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="footnote">Contacts decoded from each clinic's own /contact page where possible; rows marked <span class="badge b-grey">verify</span> are directory-sourced (the clinic site is JavaScript-only) — confirm before mass-use. Sedat Tatar, Erman Ak, Ekizceli publish no email — use WhatsApp. Accessed 17 Jun 2026.</p>
+</section>
+
+<!-- ============ 1. DECISION BRIEF ============ -->
+<section id="brief">
+  <h2><span class="num">1.</span> Executive Decision Brief</h2>
+  <p class="sub">The direct answers, up front.</p>
+
+  <div class="callout c-green">
+    <b>Status — outreach already underway.</b> Jeremy, by the time you're reading this we've already reached out to the top competing clinics in each category (hair, facelift, BBL). They've been told we're leaning toward a particular clinic but are doing our due diligence and comparing verified, surgeon-led options — so the competing quotes should be coming back. This brief is your reference for weighing those replies against the current Asli Tarcan quotes; nothing here needs to be re-started from scratch.
+  </div>
+
+  <div class="callout c-amber">
+    <b>Headline:</b> Asli Tarcan can be a reasonable, mid-priced option for a straightforward <b>hair transplant</b> if you lock the details down in writing. For the <b>mid-facelift</b>, the clinic has now named the operating surgeon and Jeremy meets them tomorrow — so the job shifts from "who is it?" to <b>verification</b>: confirm that named doctor's <b>EBOPRAS/TPRECD board certification</b> and the <b>specific operating hospital</b> before any deposit (see the tomorrow's-meeting checklist below). The $7,500 price is competitive; use it as leverage, and get 2–3 competing direct quotes so the clinic knows he's comparing verified surgeons.
+  </div>
+  <div class="callout c-blue">
+    <b>For tomorrow's facelift meeting — verify on the spot:</b> (1) the surgeon's <b>full name + EBOPRAS/TPRECD certification number</b> — search it live at <a href="https://ebopras.eu/fellows">ebopras.eu/fellows</a> / <a href="https://plastikcerrahi.org.tr/doctor-search">TPRECD directory</a>; (2) the <b>named hospital</b> where surgery happens + its accreditation; (3) whether the surgeon recommends a true <b>mid-facelift vs. deep-plane/SMAS</b> for his anatomy; (4) anesthesia + who provides it; (5) a <b>written itemized quote</b> with no on-site upcharges and a revision policy. If the named doctor checks out on the registry, the facelift here becomes viable.
+  </div>
+
+  <h3>Is Asli Tarcan a prudent choice…</h3>
+  <ul>
+    <li><b>…for Jeremy's hair transplant?</b> <span class="badge b-amber">CONDITIONAL</span> The $3,000 price is fair and in line with surgeon-involved clinics. But it operates the standard high-volume, technician-led model, and there is a credible, multi-source pattern of <b>donor-area overharvesting, surprise on-site upcharges, and hostile refund handling</b>. Acceptable only with a written, itemized quote, a doctor-led donor scan, and a guaranteed graft-count record.</li>
+    <li><b>…for his eyebrow work?</b> <span class="badge b-amber">CONDITIONAL</span> +$1,000 is reasonable market pricing and the work can be done in the same session. Same caveats as the scalp work apply.</li>
+    <li><b>…for his mid-facelift?</b> <span class="badge b-amber">VERIFY FIRST</span> They've named the surgeon and he meets them tomorrow. It's viable <b>if</b> that doctor's EBOPRAS/TPRECD board certification and the operating hospital check out — confirm both at the meeting before any deposit.</li>
+    <li><b>Is the named facelift doctor independently verified?</b> <span class="badge b-amber">NOT YET</span> Jeremy now has the name; it hasn't been run against the official registry. Verify it live at the meeting (links in the box above). Note the clinic's <em>general</em> medical lead is a medical-aesthetics physician, not a plastic surgeon — so confirm the operating surgeon is a different, board-certified plastic surgeon.</li>
+    <li><b>Are the quotes competitive?</b> Hair: fair. Eyebrows: fair. Facelift: $7,500 is competitive mid-market — fine, provided the named surgeon verifies. Use the competing quotes (section 5) as leverage.</li>
+  </ul>
+
+  <h3>Best three alternatives per procedure</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Hair + Eyebrows (value picks)</h4>
+      <div class="kv"><b>Best value / on-budget:</b> Dr. Resul Yaman (IAHRS-listed, surgeon-involved, ~$2,900 base; eyebrows ~€1/graft)</div>
+      <div class="kv"><b>Best lower-cost credible:</b> Hermest (Dr. Ahmet Murat) — strong package, ~$2,500–4,000</div>
+      <div class="kv"><b>Most price-transparent:</b> Dr. Emrah Çinik — fully-inclusive Sapphire FUE £2,450 (~$2,950)</div>
+    </div>
+    <div class="card">
+      <h4>Facial Rejuvenation (value picks)</h4>
+      <div class="kv"><b>Best value:</b> Dr. Ali Mezdeği (deep-plane from ~€5,000 ≈ $5,400, direct-to-surgeon, under ceiling)</div>
+      <div class="kv"><b>Best male-result evidence:</b> Dr. Cem Berkay Sinaci "Dr. CBS" (documented male galleries; get a written deep-plane quote)</div>
+    </div>
+    <div class="card">
+      <h4>Skinny BBL (Vanessa)</h4>
+      <div class="kv"><b>Best safety + protocol:</b> Doç. Dr. Sedat Tatar (published ultrasound-guided, subcutaneous-only protocol)</div>
+      <div class="kv"><b>Best subtle/"mini" + best price:</b> Op. Dr. Ali Mezdeği (named "Mini BBL"; full BBL from €4,500)</div>
+      <div class="kv"><b>Best credential + natural reputation:</b> Dr. Erman Ak (EBOPRAS 2021, natural-result reputation)</div>
+    </div>
+    <div class="card top">
+      <h4>What Jeremy & Vanessa should AVOID</h4>
+      <ul style="margin-bottom:0">
+        <li>Paying for surgery without a <b>named, board-verified surgeon and named hospital</b>.</li>
+        <li><b>Non-refundable deposits</b> and any "price changes when you arrive."</li>
+        <li>Booking surgery on <b>availability or a coordinator's pitch</b>.</li>
+        <li>Paying extra for <b>exosomes</b> (not evidence-based, not FDA-approved).</li>
+        <li>For BBL: <b>any injectable filler/silicone/biopolymer</b>, or a surgeon who won't confirm ultrasound-guided, above-the-muscle fat placement.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Unresolved facts that MUST be answered before proceeding</h3>
+  <ol>
+    <li>The <b>named, board-certified surgeon</b> and the <b>named, accredited hospital</b> for any surgery — in writing.</li>
+    <li>A <b>single itemized written quote</b> with no on-site upcharges (sedation, PRP, exosome, hospital all locked).</li>
+    <li>A written <b>refund + revision/complication policy</b>; no non-refundable deposit.</li>
+    <li>For hair: <b>who does extraction / channels / implantation</b>, max grafts from donor, and a guaranteed post-op graft-count record.</li>
+    <li>For BBL: confirmation of <b>autologous fat only, ultrasound-guided, subcutaneous-only</b>, dedicated anesthesiologist, JCI hospital — plus an honest donor-fat assessment (Vanessa may be too lean for a meaningful result).</li>
+  </ol>
+</section>
+
+<!-- ============ 2. RED FLAGS ============ -->
+<section id="flags">
+  <h2><span class="num">2.</span> Immediate Red Flags</h2>
+  <p class="sub">Issues serious enough to pause any booking or payment until resolved.</p>
+
+  <div class="callout c-amber">
+    <b>1 · Verify the named facelift surgeon before any deposit.</b> Jeremy now has the surgeon's name and meets them tomorrow — good. The one must-do: confirm that doctor is a <b>board-certified plastic surgeon (EBOPRAS/TPRECD)</b> on the official registry, and get the <b>operating hospital named in writing</b>. The clinic's general medical lead is a medical-aesthetics physician, so make sure the person operating is a different, board-certified plastic surgeon.
+  </div>
+  <div class="callout c-amber">
+    <b>2 · Documented pattern of surprise upcharges & hostile refunds.</b> Multiple independent complaints (Şikayetvar, Trustpilot, RealSelf) report price doubling on arrival, sedation/"stem cell" add-ons, and agents stating the patient is "NEVER getting a refund." Get everything in writing; avoid non-refundable deposits.
+  </div>
+  <div class="callout c-amber">
+    <b>3 · Donor overharvesting reports.</b> At least two independent same-period RealSelf patients describe over-harvested, near-bald donor areas needing costly repair. Insist on a written donor-scan and maximum-graft limit.
+  </div>
+  <div class="callout c-amber">
+    <b>4 · "Exosome" therapy is a price-justifying label.</b> Not FDA-approved, no large peer-reviewed long-term trials for hair loss. Don't pay a premium for it. (<a href="https://www.americanhairloss.org/stem-cells-and-exosomes-in-hair-loss-treatment-hope-or-hype/">American Hair Loss Assoc.</a>)
+  </div>
+  <div class="callout c-blue">
+    <b>5 · For Vanessa's BBL, surgeon selection is everything.</b> The Turkey BBL deaths that made the news all trace to the same pattern — unnamed surgeons, non-hospital settings, and rushed multi-procedure marathons. Every BBL surgeon recommended here has been screened to exclude that profile; the section-6 picks all commit to ultrasound-guided, above-the-muscle technique with a named surgeon in a JCI hospital.
+  </div>
+</section>
+
+<!-- ============ 3. ASLI TARCAN DEEP DIVE ============ -->
+<section id="asli">
+  <h2><span class="num">3.</span> Asli Tarcan Clinic — Deep Dive</h2>
+  <p class="sub">Evidence separated into verified facts, clinic claims, independent evidence, and open questions.</p>
+
+  <h3>The verified facts <span class="badge b-green">VERIFIED</span></h3>
+  <ul>
+    <li><b>Operating entity:</b> "Asli Tarcan Health Tourism Services" / "Asli Tarcan Health Group," operating the clinic-plus-coordination model common in Turkey. (<a href="https://aslitarcanclinic.com/about-us/">About</a>)</li>
+    <li><b>Address:</b> Maltepe Mah., Eski Londra Asfaltı Cad., Cevizlibağ, Zeytinburnu, Istanbul. Phone +90 549 421 50 50 · WhatsApp +90 535 716 4020.</li>
+    <li><b>"Aslı Tarcan" is not a doctor:</b> the clinic's own bio calls her "a visionary entrepreneur," with no medical degree or license cited. Third-party pages calling her "Dr." and "present at every operation" are <b>unsupported SEO copy</b>. (<a href="https://aslitarcanclinic.com/doctors/">Doctors page</a>)</li>
+    <li><b>Medical leadership:</b> CMO <b>Dr. Bülent Çatıkkaş</b> — a medical-aesthetics/hair physician (MD Cumhuriyet Univ. 1993), <b>not a plastic surgeon</b>. No plastic surgeon is named for facial surgery. (<a href="https://ethnic-rhinoplasty.com/dr-bulent-catikkas/">Profile</a>)</li>
+  </ul>
+
+  <h3>Clinic claims (treat as marketing) <span class="badge b-blue">CLAIM</span></h3>
+  <ul>
+    <li>"70,000+ patients / 35,000+ hair transplants" — promotional, unverifiable.</li>
+    <li>A facelift surgeon has now been named to Jeremy (meeting tomorrow). <b>Action:</b> get that name + EBOPRAS/TPRECD number in writing and run it against the official registry — the clinic's website still markets "expert plastic surgeons" generically, so verify the specific person.</li>
+    <li>Surgery packages "include the surgeon, anesthesiologists, hospital, transfers from clinic to hospital" — confirm <b>which hospital</b> the operation takes place in and its accreditation. Standard for Turkey to operate in a partner hospital; just get it named.</li>
+  </ul>
+
+  <h3>Independent evidence — the negative pattern</h3>
+  <p>Aggregate scores are high (Trustpilot ~4.6/5, 700+) but carry a consistent ~5% tail describing serious harm. The substance of the complaints matters more than the average:</p>
+  <div class="scroller">
+  <table>
+    <thead><tr><th>Allegation</th><th>Date</th><th>Evidence</th><th>Corroborated?</th><th>Verdict</th></tr></thead>
+    <tbody>
+      <tr><td>Overharvested donor + frontal scar + bald patches; needed costly US repair</td><td>Jul 2021</td><td>Described; repair done in US</td><td>Yes — 2nd same-clinic patient same period</td><td><span class="badge b-amber">Plausible, strongly supported</span></td></tr>
+      <tr><td>Misleading donor info + surprise sedation (₺10k) & stem-cell (₺20k) charges; aftercare stopped at month 3; unnatural hairline</td><td>Feb 2025</td><td>Photos (Şikayetvar)</td><td>Yes — commenter reports identical</td><td><span class="badge b-amber">Plausible, supported</span></td></tr>
+      <tr><td>Botched endoscopic brow lift; clinic refused to name surgeon/technique</td><td>Oct 2024</td><td>Narrative</td><td>Pattern (surgeon never named)</td><td><span class="badge b-amber">Plausible — high relevance to facelift</span></td></tr>
+      <tr><td>Deposit withheld / "NEVER getting a refund"</td><td>2024+</td><td>Multiple</td><td>Multiple platforms</td><td><span class="badge b-amber">Supported pattern</span></td></tr>
+      <tr><td>"Dr. Asli Tarcan is a doctor / present at every operation"</td><td>ongoing</td><td>SEO pages</td><td>Contradicted by own bio</td><td><span class="badge b-red">Unsupported / likely false</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="footnote">Sources: <a href="https://www.sikayetvar.com/asli-tarcan-hair-clinic">Şikayetvar (9 complaints)</a> · <a href="https://www.realself.com/review/hair-transplant-black-woman-asli-tarcan-turkey">RealSelf</a> · <a href="https://www.trustpilot.com/review/aslitarcanclinic.com">Trustpilot</a> · <a href="https://hairlinetransplantation.com/reviews/asli-tarcan-clinic/">Aggregated reviews</a>. Allegations are reported as allegations, not established fact, except where independently corroborated.</p>
+
+  <h3>Fair balance</h3>
+  <p>Many patients report satisfactory hair-transplant experiences and good coordination, and the headline ratings are genuinely high. The risk here isn't "scam" — it's the <b>upsell/refund behavior</b>, the <b>donor-overharvest reports</b>, and the <b>complete absence of a named surgeon and named operating hospital for facial surgery</b>. For a simple hair case with everything pinned down in writing, it can work. For a facelift, that missing information is the problem.</p>
+
+  <h3>Questions the clinic must answer (Asli Tarcan)</h3>
+  <ol>
+    <li>Full legal name + active TPRECD/EBOPRAS number of the <b>specific</b> plastic surgeon for the facelift, plus the <b>named hospital</b> and its accreditation — in writing.</li>
+    <li>One <b>itemized</b> quote locking sedation, PRP, exosome, hospital, transfers — stating <b>no on-site upcharges</b>.</li>
+    <li>Written <b>refund + revision/complication</b> policy; confirm <b>no non-refundable deposit</b>.</li>
+    <li>For hair: who performs extraction/channels/implantation, max donor grafts, and <b>guaranteed delivery of the graft-count medical record</b>.</li>
+  </ol>
+</section>
+
+<!-- ============ 4. HAIR & EYEBROW ============ -->
+<section id="hair">
+  <h2><span class="num">4.</span> Top Hair & Eyebrow Options <span class="badge b-green" style="font-size:11px;vertical-align:middle">VALUE-ONLY</span></h2>
+  <p class="sub">Premium options removed per your focus on budget. These are the surgeon-involved clinics that actually fit near a ~$3k all-in.</p>
+
+  <div class="callout c-blue">
+    <b>The value tier, plainly:</b> these clinics have a named doctor doing planning, hairline design, and recipient incisions, while <b>technicians do most extraction & implantation</b> — the standard Turkish model. For Jeremy's small ~2–3k refinement on a prior transplant, that's a defensible value choice. The one non-negotiable: a <b>doctor-led donor scan in writing</b> before paying, given the previous work and the donor-overharvest reports that plague the cheaper end.
+  </div>
+
+  <h3>Featured before/after galleries</h3>
+  <div class="gallery">
+    <div class="gcard"><div class="thumb g1">Dr. Resul Yaman<br>Hair · Forum-documented</div><div class="body"><b>Best value, on-budget</b><p>Independent long-term threads on Hair Restoration Network — harder to cherry-pick.</p><a href="https://resulyaman.com/hair-transplant-before-after/">Gallery →</a></div></div>
+    <div class="gcard"><div class="thumb g6">Hermest Clinic<br>Hair · 6-mo vs 1-yr</div><div class="body"><b>Best lower-cost credible</b><p>Structured 12-month timeline; 6-month vs 1-year comparison page.</p><a href="https://www.hermestclinic.com/before-after-pictures-hair-transplant/">Gallery →</a></div></div>
+    <div class="gcard"><div class="thumb g4">Dr. Emrah Çinik<br>Hair · Fixed pricing</div><div class="body"><b>Most price-transparent</b><p>Fully-inclusive fixed packages; large result archive.</p><a href="https://emrahcinik.com/hair-transplant-results/">Gallery →</a></div></div>
+  </div>
+
+  <h3>Recommendations</h3>
+  <div class="grid">
+    <div class="card top"><h4>★ Best value / on-budget — Dr. Resul Yaman</h4>
+      <div class="pill-row"><span class="badge b-green">IAHRS-listed</span><span class="badge b-blue">ISHRS</span></div>
+      <div class="kv"><b>Model:</b> surgeon does hairline design, channels, critical placement; team assists.</div>
+      <div class="kv"><b>Eyebrow:</b> ~€1/graft → ~$650–1,100 both brows (your $1k estimate is fair).</div>
+      <div class="kv"><b>Price:</b> ~$2,700–2,900 base all-in (hotel, transfers, PRP, meds); hair+brow ≈ $3.3–4k. <span class="badge b-green">Published</span></div>
+      <div class="kv"><b>Watch:</b> a former-coordinator allegation that estimates were sales-set — insist on a <b>doctor-led donor scan in writing</b>.</div>
+    </div>
+    <div class="card top"><h4>★ Best lower-cost credible — Hermest (Dr. Ahmet Murat)</h4>
+      <div class="pill-row"><span class="badge b-amber">Board status unverified</span></div>
+      <div class="kv"><b>Price:</b> Sapphire FUE €2,890 (~$3,350), flat up to 4,000 grafts; PRP bundled. <b>Eyebrow</b> quote-only (smaller package). <span class="badge b-green">Published</span></div>
+      <div class="kv"><b>Reviews:</b> 4.9/950+ Google; balanced first-hand forum diary.</div>
+      <div class="kv"><b>Watch:</b> doctor has a cardiology background + HT diploma — confirm who does the surgical steps; verify ISHRS/ABHRS (not found in registry search).</div>
+    </div>
+    <div class="card"><h4>Most price-transparent — Dr. Emrah Çinik</h4>
+      <div class="pill-row"><span class="badge b-blue">ISHRS-affiliated · FUE Europe</span></div>
+      <div class="kv"><b>Price:</b> Classic FUE £1,995 · Sapphire FUE £2,450 (~$2,950) · DHI £3,050 — fully inclusive (surgery, hotel, transfers, post-op), no day-of upsell. <span class="badge b-green">Published</span></div>
+      <div class="kv"><b>Eyebrow:</b> separate quote.</div>
+      <div class="kv"><b>Watch:</b> very high-volume operation — doctor's per-case involvement is diluted; decline any exosome add-on (not evidence-based).</div>
+    </div>
+    <div class="card"><h4>On the eyebrow add-on</h4>
+      <div class="kv"><b>$1,000 is fair-to-good value</b> at Yaman (~€1/graft, ~$650–1,100 both brows) and bundled cheaply at Hermest. Budget ~250–400 grafts/brow; can be done <b>same session</b> as the scalp work everywhere here.</div>
+      <div class="kv"><b>PRP:</b> usually bundled free — fine, don't pay extra. <b>Exosomes:</b> not evidence-based — decline the upcharge.</div>
+    </div>
+  </div>
+
+  <details><summary>What was removed & why (value focus)</summary>
+    <ul>
+      <li><b>Removed — premium / over budget:</b> Dr. Özlem Biçer (~$14k incl. €5k eyebrow) · Dr. Tayfun Oğuzoğlu / DrT (~$4.5–5.5k, plus complication threads) · ASMED / Dr. Koray Erdoğan (over-spec'd for a small case).</li>
+      <li><b>Removed — integrity flag:</b> Smile Hair Clinic (Trustpilot review-solicitation flag + cobblestoning reports; also $4.5–6k with brows).</li>
+      <li><b>Kept value pool:</b> Dr. Resul Yaman · Hermest / Dr. Ahmet Murat · Dr. Emrah Çinik. (Dr. Serkan Aygın is a borderline-budget alternative if you want a fourth.)</li>
+    </ul>
+  </details>
+</section>
+
+<!-- ============ 5. FACELIFT ============ -->
+<section id="face">
+  <h2><span class="num">5.</span> Top Mid-Facelift Options</h2>
+  <p class="sub">Critical: do not shop the word "mid-facelift." For a 50-yo man, an isolated midface lift is frequently the <em>wrong</em> operation.</p>
+
+  <div class="callout c-blue">
+    <b>What a 50-yo man is usually actually a candidate for.</b> A true isolated mid-facelift lifts only the cheek fat pad and <b>does not touch the jawline or neck</b> — which is exactly what reads as "aged" in male faces. Most men this age are better served by a <b>deep-plane</b> (or SMAS) facelift that repositions midface + jowl + upper neck as one unit, often combined with a neck lift ± lower-lid blepharoplasty. <b>Jeremy should not pre-diagnose — he should ask each surgeon in person: "Given my anatomy, what plane and which zones, and is a 'mid-facelift' even right for me?"</b>
+  </div>
+
+  <details><summary>Procedure glossary — what each actually addresses</summary>
+    <ul>
+      <li><b>Isolated / vertical midface lift:</b> cheek fat pad only; not jowls/neck.</li>
+      <li><b>Endoscopic midface lift:</b> scarless, for younger faces / mild descent (Tezel, Avşar specialize).</li>
+      <li><b>SMAS facelift:</b> workhorse; tightens the SMAS over lower face/jowl; predictable, lower-risk dissection.</li>
+      <li><b>Deep-plane / extended deep-plane:</b> releases retaining ligaments; midface + jowl + jawline (+ neck) in one; ~10–15 yr longevity.</li>
+      <li><b>Mini / lower facelift:</b> jowl/lower face only, shorter scar.</li>
+      <li><b>Neck lift:</b> platysmaplasty ± submental lipo — often the highest-value add for a man at 50.</li>
+      <li><b>Fat grafting / blepharoplasty:</b> common adjuncts for volume / eyes.</li>
+    </ul>
+  </details>
+
+  <div class="callout c-amber"><b>Use the $7,500 as leverage.</b> Istanbul packaged facelifts cluster $3,500–$8,300, so $7,500 is competitive. The value play is direct-to-surgeon: a board-certified surgeon doing the operation himself, in the same ballpark or a little above, often at <b>better quality per dollar</b> than a packaged quote. Below are <b>three clean, value-tier surgeons to get competing direct quotes from</b> — all screened to exclude any fatal incidents or botched-outcome patterns. Pit these against tomorrow's quote.</div>
+
+  <h3>Three value-tier competitors for direct quotes <span class="badge b-green" style="font-size:11px">CLEAN-REP SCREENED</span></h3>
+  <div class="grid">
+    <div class="card top"><h4>★ Best value (deep-plane) — Dr. Ali Mezdeği</h4>
+      <div class="pill-row"><span class="badge b-blue">Turkish board (deep-plane)</span><span class="badge b-amber">EBOPRAS unconfirmed</span></div>
+      <div class="kv"><b>Why:</b> direct-to-surgeon deep-plane <b>from €5,000 (~$5,400)</b>, all-inclusive, under the ceiling; jaw/maxillofacial expertise is a real differentiator.</div>
+      <div class="kv"><b>Contact:</b> mezdegi@yahoo.com · WA +90 542 243 32 41</div>
+      <div class="kv"><b>Reputation:</b> clean — no fatal/botched pattern found.</div>
+    </div>
+    <div class="card top"><h4>★ Closest match — Dr. Fatih Ceran</h4>
+      <div class="pill-row"><span class="badge b-green">EBOPRAS · ISAPS · TSPRAS</span></div>
+      <div class="kv"><b>Why:</b> Assoc. Prof., face-focused deep-plane + SMAS, ~1,100+ facelifts; the strongest like-for-like with Mezdeği on credentials.</div>
+      <div class="kv"><b>Price:</b> quote-only (value tier, direct-to-surgeon).</div>
+      <div class="kv"><b>Contact:</b> info@drfatihceran.com · WA +90 552 313 02 96 · IG @dr.fatihceran</div>
+      <div class="kv"><b>Reputation:</b> clean — no fatal/botched cluster.</div>
+    </div>
+    <div class="card"><h4>Deep-plane alternative — Dr. Mehmet Solmaz</h4>
+      <div class="pill-row"><span class="badge b-green">EBOPRAS (2021) · ISAPS · TSPRAS</span></div>
+      <div class="kv"><b>Why:</b> deep-plane + mid-face + neck lift + blepharoplasty; suited to a 50-yo male (confirm facelift volume — broad practice).</div>
+      <div class="kv"><b>Price:</b> quote-only.</div>
+      <div class="kv"><b>Contact:</b> info@drmehmetsolmaz.com · WA +90 533 561 22 92 · IG @dr.mehmetsolmaz</div>
+      <div class="kv"><b>Reputation:</b> clean (one trivial wait-time complaint only).</div>
+    </div>
+    <div class="card"><h4>Less-invasive option (if exam supports it)</h4>
+      <div class="kv"><b>Prof. Erdem Tezel</b> — endoscopic/scarless facelift (Ramirez-trained). ofis@erdemtezel.com · WA +90 532 767 2235 · IG @prof.dr.erdemtezel</div>
+      <div class="kv"><b>Dr. Yakup Avşar</b> — endoscopic uni-planar "Charm Lift." bilgi@avsarestetik.com · WA +90 530 315 25 39 · IG @dravsar</div>
+      <div class="kv footnote">Endoscopic ≠ deep-plane — better for mid-face/mild descent than heavy jowls. Both clean reputations.</div>
+    </div>
+  </div>
+
+  <div class="callout c-blue"><b>How to run the competition:</b> email/WhatsApp Mezdeği, Ceran, and Solmaz with the same photos and the facelift question script (section 11). Compare each on: the procedure they recommend (deep-plane vs SMAS vs mid), whether the surgeon operates start-to-finish, the named hospital, and the all-in price. Then walk into tomorrow's meeting with two or three real quotes in hand.</div>
+
+  <details><summary>What was removed & why (value + clean-reputation focus)</summary>
+    <ul>
+      <li><b>Removed — premium / over budget:</b> Dr. Metin Kerem (~$13k–$18k).</li>
+      <li><b>Removed — botched-outcome concern:</b> Dr. Cem Berkay Sinaci (a documented botched-facelift report) · Prof. Süleyman Taş (complaint/legal-complaint pattern).</li>
+      <li><b>Kept value pool (clean):</b> Dr. Ali Mezdeği · Dr. Fatih Ceran · Dr. Mehmet Solmaz · (endoscopic) Prof. Erdem Tezel · Dr. Yakup Avşar.</li>
+      <li><b>Excluded on geography/other:</b> Dr. Serdar Nasır (Ankara) · Dr. Onur Gilleard (London) · Dr. Bülent Cihantimur (thread-lift/branded group) · Prof. Onur Erol (~87, likely not operating).</li>
+    </ul>
+    <p class="footnote">Contacts decoded from each surgeon's own website (June 2026); EBOPRAS confirmed for Ceran &amp; Solmaz via their profiles, not yet at the live registry — verify before paying. No published facelift prices (all quote-only), which is exactly why a direct email gets a real competing number.</p>
+  </details>
+</section>
+
+<!-- ============ 6. BBL ============ -->
+<section id="bbl">
+  <h2><span class="num">6.</span> Top Skinny-BBL Options (Vanessa)</h2>
+  <p class="sub">Safety is the entire story. BBL has the highest mortality of any cosmetic procedure.</p>
+
+  <div class="callout c-red">
+    <b>First, the honest candidacy question.</b> A real "skinny BBL" = liposuction + transfer of the patient's <b>own</b> fat, subcutaneous plane only, smaller volume, shape-focused. It needs donor fat — roughly ~1,000 ml harvested to yield ~500–600 ml purified per side. If Vanessa is very lean (body fat under ~18–20% with little pinchable fat), <b>she may not be a candidate</b>, and a safe surgeon will say so or offer only a very modest result. <b>Have her donor fat honestly assessed before anything else.</b> The right answer may be "no" — not a pivot to fillers.
+  </div>
+
+  <div class="callout c-red">
+    <b>Hard disqualifiers — reject outright.</b> Any injectable <b>silicone, hydrogel, biopolymer, or large-volume permanent filler</b> (disfiguring, unremovable). Any surgeon who <b>won't name themselves</b> or <b>won't name the injected material</b>. Any who <b>won't confirm real-time ultrasound-guided, subcutaneous-only (above the muscle)</b> fat placement. Non-hospital settings. More than ~3 BBLs/day. <br><span class="footnote">Note: some Istanbul clinics market "skinny BBL" but pivot lean patients to Sculptra/PLLA, Radiesse, or "AlloClae" — these are fillers/biostimulators, <b>not</b> a fat-transfer BBL. Treat any such pivot as a yellow flag.</span>
+  </div>
+
+  <h3>The non-negotiable safety questions (all "yes," in writing)</h3>
+  <ul>
+    <li>My own fat only — <b>no</b> silicone/hydrogel/biopolymer/permanent filler?</li>
+    <li>Fat placed <b>subcutaneously only, above the gluteal muscle/fascia</b>? (Every confirmed BBL death involved deep/intramuscular fat.)</li>
+    <li><b>Real-time intraoperative ultrasound</b> tracking the cannula throughout? (ASPS/ASAPS/ISAPS/BAAPS standard since 2022.)</li>
+    <li><b>You, the named surgeon</b>, perform the entire operation, with a dedicated <b>anesthesiologist present throughout</b>?</li>
+    <li><b>JCI-accredited hospital</b>, overnight monitoring, <b>VTE/blood-clot prophylaxis</b>, ≤3 BBLs/day, no fly for ~7–10 days?</li>
+  </ul>
+
+  <h3>Featured natural-result galleries</h3>
+  <div class="gallery">
+    <div class="gcard"><div class="thumb g5">Doç. Dr. Sedat Tatar<br>Ultrasound-safe BBL</div><div class="body"><b>Best published protocol</b><p>Publishes an explicit ultrasound-guided, above-muscle, JCI-hospital BBL protocol.</p><a href="https://drsedattatar.com/tr/basarilar/">Results →</a></div></div>
+    <div class="gcard"><div class="thumb g5">Op. Dr. Ali Mezdeği<br>"Mini BBL"</div><div class="body"><b>Best subtle framing</b><p>Named "Mini BBL"; states mandatory ultrasound, subcutaneous-only as non-negotiable.</p><a href="https://www.alimezdegi.com/en/mini-bbl-turkey/">Mini BBL →</a></div></div>
+    <div class="gcard"><div class="thumb g6">Dr. Erman Ak<br>Natural projection</div><div class="body"><b>Best credential + reputation</b><p>EBOPRAS 2021; founded a hospital plastic-surgery dept; natural-result reputation.</p><a href="https://drermanak.com/en/buttocks-aesthetics/">Gallery →</a></div></div>
+  </div>
+
+  <h3>Recommendations (vet all three first)</h3>
+  <div class="grid">
+    <div class="card top"><h4>★ Best safety + protocol — Doç. Dr. Sedat Tatar</h4>
+      <div class="pill-row"><span class="badge b-amber">FEBOPRAS/FACS claim unverified at source</span></div>
+      <div class="kv"><b>Why:</b> the clearest public alignment with the safety standard — published Turkish "Ultrasonik Güvenli BBL" page: above-muscle, ultrasound-guided, JCI-hospital, GA, BBL pillow + corset aftercare.</div>
+      <div class="kv"><b>Reviews:</b> ~4.9/5; no severe-complication pattern found.</div>
+    </div>
+    <div class="card top"><h4>★ Best subtle "mini" specialist — Op. Dr. Ali Mezdeği</h4>
+      <div class="pill-row"><span class="badge b-amber">EBOPRAS unconfirmed</span></div>
+      <div class="kv"><b>Why:</b> explicitly offers a named "Mini BBL" and BBL revision; states mandatory ultrasound + subcutaneous-only as protocol. Good fit for a deliberately small, lean-patient result.</div>
+      <div class="kv"><b>Price:</b> BBL from €4,500 (~$4,900) all-inclusive.</div>
+      <div class="kv"><b>Watch:</b> profile leans facial/rhino — confirm BBL volume specifically.</div>
+    </div>
+    <div class="card"><h4>Best credential + natural reputation — Dr. Erman Ak</h4>
+      <div class="pill-row"><span class="badge b-green">EBOPRAS 2021 (claimed)</span></div>
+      <div class="kv"><b>Why:</b> best-credentialed of the three; founded the plastic-surgery dept at Başakşehir Çam & Sakura Hospital; reputed for natural projection.</div>
+      <div class="kv"><b>Watch:</b> press him to confirm ultrasound-guided subcutaneous technique (not clearly stated publicly); relatively junior (grad 2014).</div>
+    </div>
+    <div class="card"><h4>Institutional-safety options</h4>
+      <div class="kv">Surgeons operating in <b>JCI hospitals</b> (Memorial, Acıbadem) add an institutional safety anchor: Dr. Orhan Fahri Demir (Memorial Bahçelievler), Dr. Cengizhan Ekizceli, Dr. Fatih Ceran. Verify EBOPRAS + ultrasound protocol directly.</div>
+    </div>
+  </div>
+
+  <details><summary>Full BBL pool, cautions & exclusions</summary>
+    <p><b>Identified (12+):</b> Sedat Tatar · Ali Mezdeği · Erman Ak · Cengizhan Ekizceli · Fatih Ceran · Orhan Fahri Demir (Memorial) · Dr. Kalafatlar (Acıbadem) · Tunç Tiryaki (regenerative/micro-fat — confirm he does gluteal BBL) · Bülent Cihantimur (<span class="badge b-amber">caution</span> — proprietary "Cihantimur Fat Transfer," a review alleging fat placed in hips not buttocks) · Fatih Irmak · Mehmet Köksal · Erhan Güneri (unverified).</p>
+    <p><b>Treat intermediaries/packagers with caution</b> (Carely, AKM, Hayatmed, Bookimed, Esteport): useful for pricing context, but insist on knowing the <b>named EBOPRAS/TPRECD surgeon</b> and the <b>named JCI hospital</b> — not a "clinic."</p>
+  </details>
+</section>
+
+<!-- ============ 7. PRICE ============ -->
+<section id="price">
+  <h2><span class="num">7.</span> Price Comparison</h2>
+  <p class="sub">Approximate, multi-currency. Retrieved 17 June 2026 — figures move daily; quote in USD/EUR where possible (TRY is depreciating).</p>
+
+  <h3>Exchange rates (approx., 17 Jun 2026)</h3>
+  <table>
+    <thead><tr><th>USD</th><th>TRY (≈46.3)</th><th>EUR (≈0.865)</th><th>GBP (≈0.745)</th></tr></thead>
+    <tbody>
+      <tr><td>$1,000</td><td>₺46,300</td><td>€865</td><td>£745</td></tr>
+      <tr><td>$3,000</td><td>₺138,900</td><td>€2,595</td><td>£2,235</td></tr>
+      <tr><td>$4,500</td><td>₺208,350</td><td>€3,895</td><td>£3,355</td></tr>
+      <tr><td>$5,000</td><td>₺231,500</td><td>€4,325</td><td>£3,725</td></tr>
+      <tr><td>$7,500</td><td>₺347,250</td><td>€6,490</td><td>£5,590</td></tr>
+      <tr><td>$13,000</td><td>₺601,900</td><td>€11,245</td><td>£9,685</td></tr>
+    </tbody>
+  </table>
+  <p class="footnote">Sources: <a href="https://tradingeconomics.com/turkey/currency">TradingEconomics</a> · <a href="https://www.exchange-rates.org/exchange-rate-history/usd-eur-2026">Exchange-Rates.org</a> · <a href="https://www.poundsterlinglive.com/bank-of-england-spot/historical-spot-exchange-rates/usd/USD-to-GBP-2026">PoundSterlingLive</a>.</p>
+
+  <h3>Istanbul benchmarks (2025–26, USD)</h3>
+  <table>
+    <thead><tr><th>Procedure</th><th>Typical range</th><th>Median</th><th>Source type</th></tr></thead>
+    <tbody>
+      <tr><td>Hair transplant 2–3k grafts (surgeon-involved)</td><td>$1,800–$5,000</td><td>~$3,000</td><td>Aggregator + published</td></tr>
+      <tr><td>Eyebrow transplant (both brows)</td><td>$1,000–$4,500</td><td>~$2,000</td><td>Published + aggregator</td></tr>
+      <tr><td>PRP (per session)</td><td>$150–$400</td><td>~$250</td><td>Published</td></tr>
+      <tr><td>Exosome "treatment" <span class="badge b-amber">low evidence</span></td><td>~$1,150–$2,300</td><td>~$1,500</td><td>Published (marketing)</td></tr>
+      <tr><td>Mid-facelift (named surgeon, direct)</td><td>~$4,500–$8,000</td><td>~$6,500</td><td>Quote / published</td></tr>
+      <tr><td>SMAS facelift</td><td>~$5,000–$9,000</td><td>~$7,000</td><td>Quote / aggregator</td></tr>
+      <tr><td>Deep-plane facelift</td><td>$3,500–$10,000 (pkgs to $18k)</td><td>~$7,000</td><td>Aggregator + published</td></tr>
+      <tr><td>Skinny / mini BBL (autologous, JCI hospital)</td><td>$3,500–$6,000</td><td>~$4,500</td><td>Published</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Verdict on Jeremy's current quotes</h3>
+  <table>
+    <thead><tr><th>Quote</th><th>Verdict</th><th>Reasoning</th></tr></thead>
+    <tbody>
+      <tr><td>Hair + PRP + exosomes — $3,000</td><td><span class="badge b-green">FAIR</span></td><td>At the surgeon-involved median. PRP is usually free-bundled; exosomes are low-evidence — ask what portion is the exosome charge and strip it out.</td></tr>
+      <tr><td>Eyebrows — +$1,000</td><td><span class="badge b-green">FAIR</span></td><td>Reasonable as an add-on; confirm whether it covers one brow or both (both-brow median ~$2,000).</td></tr>
+      <tr><td>Mid-facelift — $7,500</td><td><span class="badge b-green">FAIR — VERIFY SURGEON</span></td><td>Mid-market and competitive. Now that the surgeon is named, it's a reasonable deal <b>provided that doctor's EBOPRAS/TPRECD certification checks out and the hospital is named</b>. Get 2–3 competing direct quotes (section 5) to confirm it's a good number.</td></tr>
+    </tbody>
+  </table>
+  <p class="footnote">None of the quotes is "too good to be true." The issue is never just price — it's who operates, where, and on what terms.</p>
+</section>
+
+<!-- ============ 8. REVIEWS ============ -->
+<section id="reviews">
+  <h2><span class="num">8.</span> Review & Reputation Analysis</h2>
+  <p class="sub">Patterns that matter, not star averages. For hair, weight results documented at 8–18 months over immediate post-op reviews; for surgery, weight healed results over operating-room footage.</p>
+
+  <h3>Signals worth acting on</h3>
+  <ul>
+    <li><b>The value shortlist is clean.</b> Dr. Resul Yaman, Hermest, Dr. Emrah Çinik (hair); Dr. Ali Mezdeği, Dr. Fatih Ceran, Dr. Mehmet Solmaz (facelift); Dr. Sedat Tatar, Dr. Erman Ak (BBL) — reviews are clinically substantive (technique, follow-up) rather than logistics fluff, with <b>no fatal incidents and no botched-outcome pattern</b> found.</li>
+    <li><b>Asli Tarcan:</b> high average masks a harm tail — overharvested donor, surprise upcharges, hostile refunds. Many positive reviews focus on <b>coordination/logistics</b> rather than clinical outcome, so weight the clinical complaints more heavily.</li>
+    <li><b>Already screened out (don't reconsider):</b> Smile Hair Clinic (Trustpilot review-solicitation flag + cobblestoning reports), Dr. Tayfun Oğuzoğlu / DrT ("ruined my hair"/scar threads), Dr. Cem Berkay Sinaci (a botched-facelift report), and Prof. Süleyman Taş (complaint/legal-complaint pattern) — excluded on the no-botched rule even where credentials are strong.</li>
+  </ul>
+
+  <h3>How to read any clinic's reviews</h3>
+  <p>Discount reviews about airport pickups and hotels. Look for: results photographed <b>8–18 months</b> out; donor-area condition; whether the reviewer names the actual operator; sudden bursts of identical 5-star wording. For BBL/facelift, prioritize <b>healed results several months out</b>, not edited early photos or OR footage.</p>
+</section>
+
+<!-- ============ 9. VERIFICATION ============ -->
+<section id="verify">
+  <h2><span class="num">9.</span> Surgeon & Facility Verification</h2>
+  <p class="sub">What was independently confirmed at an official registry vs. what remains a clinic/aggregator claim. <b>Hair credentials verified well; plastic-surgery board claims could not be confirmed at source</b> (EBOPRAS directory is JavaScript-gated) — verify each yourself before paying.</p>
+
+  <div class="scroller">
+  <table>
+    <thead><tr><th>Provider</th><th>Category</th><th>Confirmed at registry</th><th>Unconfirmed / to verify</th><th>Confidence</th></tr></thead>
+    <tbody>
+      <tr><td>Dr. Resul Yaman</td><td>Hair</td><td><span class="badge b-green">IAHRS-listed</span>, ISHRS</td><td>Personal-involvement claim (corroborated by reviews)</td><td class="score">MED-HIGH</td></tr>
+      <tr><td>Hermest / Dr. Ahmet Murat</td><td>Hair</td><td>—</td><td>No ISHRS/ABHRS listing; cardiology background — who does surgical steps?</td><td class="score">LOW-MED</td></tr>
+      <tr><td>Dr. Emrah Çinik</td><td>Hair</td><td>ISHRS-affiliated clinic</td><td>Per-case doctor involvement (high-volume); decline exosome add-on</td><td class="score">MED</td></tr>
+      <tr><td>Dr. Ali Mezdeği</td><td>Face/BBL</td><td>Turkish-board specialist (training documented)</td><td>EBOPRAS unconfirmed; reputation clean</td><td class="score">MED</td></tr>
+      <tr><td>Dr. Fatih Ceran</td><td>Face</td><td><span class="badge b-green">EBOPRAS · ISAPS · TSPRAS</span> (profile)</td><td>Confirm at live registry; price tier</td><td class="score">MED-HIGH</td></tr>
+      <tr><td>Dr. Mehmet Solmaz</td><td>Face</td><td><span class="badge b-green">EBOPRAS (2021)</span> (profile)</td><td>Confirm at live registry; facelift volume</td><td class="score">MED</td></tr>
+      <tr><td>Doç. Dr. Sedat Tatar</td><td>BBL</td><td>—</td><td>FEBOPRAS/FACS claimed; published safety protocol is a plus</td><td class="score">MED-HIGH</td></tr>
+      <tr><td>Dr. Erman Ak</td><td>BBL</td><td>—</td><td>EBOPRAS(2021) claimed; confirm ultrasound protocol</td><td class="score">MED</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="callout c-amber"><b>Do this yourself before paying:</b> search each plastic surgeon's surname at <a href="https://ebopras.eu/fellows">ebopras.eu/fellows</a> and the <a href="https://plastikcerrahi.org.tr/doctor-search">Turkish Society (TPRECD) directory</a> (both need a browser/JavaScript). Any name <b>absent</b> is a real red flag. Hair credentials above are already confirmed: Biçer (ABHRS), Oğuzoğlu (ISHRS+ABHRS), Yaman (IAHRS).</div>
+</section>
+
+<!-- (Contacts & Pricing relocated to the top of the report) -->
+
+<!-- ============ 11. QUESTIONS ============ -->
+<section id="questions">
+  <h2><span class="num">11.</span> Questions to Send Every Clinic</h2>
+  <p class="sub">Copy-paste, demanding but polite. A serious clinic answers all of these in writing.</p>
+
+  <div class="grid">
+    <div class="card"><h4>Hair transplant</h4>
+      <ol style="font-size:13.5px">
+        <li>Who performs extraction, recipient incisions, and implantation — doctor or technicians?</li>
+        <li>How many patients does the team treat that day?</li>
+        <li>Exact graft estimate, and the maximum safe graft count from my donor?</li>
+        <li>How will you measure donor density (given my prior transplant)?</li>
+        <li>Is eyebrow grafting included? How many grafts, one brow or both?</li>
+        <li>Exact PRP protocol — and is it included?</li>
+        <li>Exact exosome product + manufacturer, and <em>why</em> is it recommended? (I may decline.)</li>
+        <li>Written all-inclusive price with no on-site upcharges?</li>
+        <li>Revision policy, and will I receive a post-op graft-count medical record?</li>
+        <li>Long-term (8–18 month) examples comparable to my hair type and age?</li>
+      </ol>
+    </div>
+    <div class="card"><h4>Facelift</h4>
+      <ol style="font-size:13.5px">
+        <li>Exact procedure proposed and why — is a "mid-facelift" even right for my anatomy vs. deep-plane/SMAS ± neck lift?</li>
+        <li>Full surgeon name + specialty + EBOPRAS/TPRECD number?</li>
+        <li>Where will the operation occur — named hospital, accreditation?</li>
+        <li>Anesthesia type, and who provides it (named anesthesiologist)?</li>
+        <li>Your annual male-facelift volume?</li>
+        <li>Deep-plane, SMAS, or other technique — incision pattern?</li>
+        <li>Overnight hospital monitoring? Emergency arrangements?</li>
+        <li>Revision policy? Total itemized price?</li>
+        <li>Recommended stay in Istanbul before flying?</li>
+        <li>Long-term, unedited <em>male</em> results?</li>
+      </ol>
+    </div>
+    <div class="card"><h4>Skinny BBL</h4>
+      <ol style="font-size:13.5px">
+        <li>Autologous fat transfer or an injectable product?</li>
+        <li>Exact name of every injected material? (No silicone/hydrogel/biopolymer.)</li>
+        <li>Real-time ultrasound used throughout fat placement?</li>
+        <li>Fat placed exclusively <em>above</em> the gluteal fascia/muscle?</li>
+        <li>Am I even a candidate given my low body fat — honestly?</li>
+        <li>Full surgeon name + credentials? Named hospital?</li>
+        <li>Dedicated anesthesiologist present throughout?</li>
+        <li>How many BBLs do you perform that day?</li>
+        <li>Clot-prevention protocol, overnight monitoring, time before flying?</li>
+        <li>Total itemized price; long-term natural-result examples for lean patients?</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12. NEGOTIATION ============ -->
+<section id="negotiate">
+  <h2><span class="num">12.</span> Negotiation Messages (WhatsApp-ready)</h2>
+  <p class="sub">Polished, firm, non-aggressive. Goal: itemized clarity and verified surgeons — not squeezing price so hard the clinic cuts medical corners.</p>
+
+  <div class="msg"><span class="lbl">→ To Asli Tarcan Clinic</span>Hello, thank you for the quotes. I'm comparing a few surgeon-led options before I decide, so I'd like a few things in writing to move forward:
+
+1. A written, itemized quote for the hair transplant — separating the core transplant, PRP, and exosomes as line items (I may decline exosomes).
+2. Eyebrow grafting included in the same session — with the exact graft allocation for scalp vs. eyebrows. Can the eyebrow fee be reduced or bundled?
+3. The exact exosome product and manufacturer, and why it's recommended.
+4. For the facelift: the full name and board certification (EBOPRAS / Turkish Plastic Surgery Society) of the surgeon who would operate, and the exact hospital and its accreditation.
+5. Your revision/complication policy and refund terms in writing.
+
+I'm ready to book quickly with the right clinic, but I need these confirmed in writing first. Thank you.</div>
+
+  <div class="msg"><span class="lbl">→ To a hair-transplant competitor (e.g., Dr. Yaman / Hermest)</span>Hello, I'm a 50-year-old male with a previous transplant, looking for roughly 2,000–3,000 grafts plus an eyebrow transplant. Could you confirm: which steps the doctor personally performs; a doctor-led donor-density assessment from my photos; an itemized all-inclusive price (transplant + eyebrows + PRP, hotel/transfers); your revision policy; and the earliest consultation this week? I can share photos now. Thank you.</div>
+
+  <div class="msg"><span class="lbl">→ To a facelift competitor (e.g., Dr. Kerem / Dr. CBS / Dr. Mezdeği)</span>Hello, I'm a 50-year-old man interested in facial rejuvenation. Before booking I'd like to know: whether you'd recommend a deep-plane/SMAS lift (± neck) rather than an isolated mid-facelift for my anatomy; that you personally perform the whole operation; the named hospital and its accreditation; anesthesia and the anesthesiologist; overnight monitoring; recommended stay before flying; your revision policy; and a total itemized price. May I see unedited long-term male results? I'm in Istanbul and can consult in person this week. Thank you.</div>
+
+  <div class="msg"><span class="lbl">→ To a skinny-BBL competitor (e.g., Dr. Tatar / Dr. Mezdeği / Dr. Ak)</span>Hello, I'm a lean/fit woman interested in a subtle, natural "skinny BBL." Before anything, I'd like an honest assessment of whether I have enough donor fat to be a candidate. Please also confirm: this is autologous fat transfer only (no fillers/silicone/biopolymers); real-time ultrasound guidance with fat placed only above the muscle; that you personally perform the operation with a dedicated anesthesiologist; the named JCI hospital; clot prevention and overnight monitoring; how many BBLs you do per day; time before flying; and a total itemized price. I can share photos for assessment. Thank you.</div>
+
+  <h3 style="margin-top:26px">Jeremy's email templates (quote requests)</h3>
+  <p class="sub">Written in Jeremy's voice — relaxed, comparison-shopping, no urgency. Anchors against the existing quote and frames the BBL as optional so nothing reads as "needing" the clinic.</p>
+
+  <div class="callout c-blue"><b>Use these for the quote-only competitors:</b> facelift — Dr. Ali Mezdeği, Dr. Fatih Ceran, Dr. Mehmet Solmaz; BBL — Dr. Sedat Tatar, Dr. Erman Ak, Dr. Mezdeği (Mini BBL). The hair clinics already publish prices, so a quick confirmation email is optional. <b>Note:</b> the email states the existing hair quote as <b>$3,000</b> as an anchor.</div>
+
+  <div class="msg"><span class="lbl">★ MASTER EMAIL — hair clinic that may also offer BBL (subject: Quote request — hair + eyebrows, and possibly a procedure for my girlfriend)</span>Hi [Clinic / Dr. ___],
+
+I'm in Istanbul for a little while and getting my options together for a hair transplant. I had a transplant a few years ago and I'm now looking at roughly 2,000–3,000 grafts to refine things, plus an eyebrow transplant in the same session.
+
+I already have a quote from another clinic — about USD $3,000 all-in for the hair and eyebrows including PRP and exosomes — so I have a number to compare against. I'm not in any rush; I'd just rather go with the right team than the first one.
+
+Could you send me:
+• Which steps the doctor personally performs (extraction, recipient incisions, implantation)
+• Your estimated graft count for my case, and an itemized all-in price (transplant + eyebrows, plus what's included — hotel, transfers, meds, PRP)
+• Whether exosomes are included or optional (and the product/manufacturer if you use them)
+• Your revision policy
+
+One more thing — my girlfriend is here with me. She's fit and pretty lean, so she doesn't have a lot of donor fat, and honestly she's only half-considering a subtle "skinny BBL." It's not a priority for us, but if you offer it and the price/approach is right, she might do it while we're here. If it's something you do, could you note your approach (your own fat only, ultrasound-guided, above the muscle, named hospital) and a ballpark price? No problem if it's not your area.
+
+I can send photos for both of us if that helps you quote accurately. Thanks very much.
+
+Jeremy</div>
+
+  <div class="msg"><span class="lbl">Variant A — facelift specialist (Dr. Kerem / Dr. CBS) (subject: Facelift consultation + quote)</span>Hi [Dr. ___],
+
+I'm a 50-year-old man in Istanbul for a while, looking into facial rejuvenation and doing my due diligence before deciding on anyone. I already have a quote elsewhere (around USD $7,500), so I have a reference point — I'm really just trying to find the right surgeon rather than the cheapest one.
+
+Before I book a consult, could you tell me:
+• Looking at my photos, would you recommend a deep-plane/SMAS lift (with a neck component if needed) rather than an isolated mid-facelift?
+• Do you personally perform the entire operation, and at which hospital (and its accreditation)?
+• Anesthesia type and who provides it; overnight monitoring; recommended stay before flying
+• Your total itemized price and revision policy
+• A few unedited long-term results on male patients around my age
+
+I'll attach photos. No rush on my end — appreciate your time.
+
+Jeremy</div>
+
+  <div class="msg"><span class="lbl">Variant B — BBL specialist (Dr. Tatar / Dr. Ak / Dr. Mezdeği) (subject: Skinny BBL — candidacy + quote for my girlfriend)</span>Hi [Dr. ___],
+
+My girlfriend and I are in Istanbul and looking into a subtle, natural "skinny BBL" for her. She's fit and fairly lean, so the first thing I'd want is your honest take on whether she even has enough donor fat to get a worthwhile result — we'd rather hear "not really worth it" than be talked into something.
+
+If she is a candidate, could you confirm:
+• Her own fat only — no fillers, silicone or biopolymers
+• Real-time ultrasound guidance, fat placed only above the muscle
+• You personally perform it, with a dedicated anesthesiologist, at a named JCI hospital
+• Clot prevention, overnight monitoring, and how long before she can fly
+• How many BBLs you do per day, and a total itemized price
+
+This is optional for us, not urgent — we're comparing a couple of surgeons. She can send photos for an assessment. Thank you.
+
+Jeremy</div>
+</section>
+
+<!-- ============ 13. GO / NO-GO ============ -->
+<section id="checklist">
+  <h2><span class="num">13.</span> Final Go / No-Go Checklist</h2>
+  <p class="sub">Print this. Do not pay a deposit or undergo treatment until every relevant box is ticked.</p>
+
+  <div class="grid">
+    <div class="card"><h4>Every procedure</h4>
+      <ul class="check">
+        <li>Named surgeon, verified at EBOPRAS / TPRECD / ABHRS / ISHRS registry</li>
+        <li>Named, accredited facility (hospital for surgery)</li>
+        <li>Single written, itemized quote — no on-site upcharges</li>
+        <li>Written revision/complication + refund policy; no non-refundable deposit</li>
+        <li>You know exactly who performs each step</li>
+        <li>Decision is unhurried — not driven by availability or a sales pitch</li>
+      </ul>
+    </div>
+    <div class="card"><h4>Hair (Jeremy)</h4>
+      <ul class="check">
+        <li>Doctor-led donor-density scan (critical — prior transplant)</li>
+        <li>Max-graft limit agreed in writing (donor overharvest risk)</li>
+        <li>Graft-count medical record guaranteed post-op</li>
+        <li>Exosome charge stripped out unless you want it</li>
+        <li>Eyebrow graft count + scalp/brow split confirmed</li>
+      </ul>
+    </div>
+    <div class="card"><h4>Facelift (Jeremy)</h4>
+      <ul class="check">
+        <li>Surgeon confirmed a "mid-facelift" is actually right (vs deep-plane/SMAS ± neck)</li>
+        <li>Surgeon performs the entire operation; named anesthesiologist</li>
+        <li>Overnight hospital monitoring + emergency plan</li>
+        <li>Unedited long-term male results reviewed</li>
+        <li>Stay ~7–10 nights before flying confirmed</li>
+      </ul>
+    </div>
+    <div class="card"><h4>Skinny BBL (Vanessa)</h4>
+      <ul class="check">
+        <li>Honest candidacy assessment — enough donor fat for a real result</li>
+        <li>Autologous fat ONLY — no filler/silicone/hydrogel/biopolymer</li>
+        <li>Real-time ultrasound + subcutaneous-only (above muscle) confirmed</li>
+        <li>JCI hospital, dedicated anesthesiologist, ≤3 BBLs/day</li>
+        <li>VTE/clot prophylaxis + overnight monitoring</li>
+        <li>No flying ~7–10 days; garment + follow-up plan</li>
+      </ul>
+    </div>
+  </div>
+  <div class="callout c-red"><b>Any single NO-GO = stop.</b> Injectable buttock filler of unknown composition, fat placed in/under the muscle, refusal to confirm ultrasound, refusal to name surgeon or material, non-hospital surgical setting, or pressure for same-day payment — each is a reason to walk away, no matter the price or the appointment availability.</div>
+</section>
+
+<!-- ============ MASTER TABLE ============ -->
+<section id="master">
+  <h2>Master Provider Table</h2>
+  <p class="sub">Condensed across categories. "Not publicly verified" used rather than blanks. Scores use the 100-pt model below.</p>
+  <div class="scroller">
+  <table>
+    <thead><tr>
+      <th>#</th><th>Category</th><th>Clinic / Doctor</th><th>Verified specialty</th><th>Doctor personally does</th><th>Facility / accreditation</th><th>Technique</th><th>Est. all-in (USD)</th><th>Independent reviews</th><th>Most serious concern</th><th>Confidence</th><th>Value</th><th>Safety</th><th>Recommendation</th>
+    </tr></thead>
+    <tbody>
+      <tr><td class="rank">H1</td><td>Hair</td><td>Dr. Resul Yaman</td><td><span class="badge b-green">IAHRS-listed</span></td><td>Hairline, channels, key placement</td><td>Own clinic, Istanbul</td><td>FUE + DHI</td><td>~$3.3–4k</td><td>Direct-involvement praise</td><td>Coordinator-set estimate claim</td><td>Med-High</td><td>★★★★★</td><td>★★★★☆</td><td>Best value / on-budget</td></tr>
+      <tr><td class="rank">H2</td><td>Hair</td><td>Hermest / Dr. A. Murat</td><td>Not publicly verified</td><td>Planning, incisions, final eval</td><td>Kadıköy clinic</td><td>Sapphire FUE, DHI</td><td>~$2.5–4k</td><td>4.9/950+ Google</td><td>No registry listing; cardiology bkgd</td><td>Low-Med</td><td>★★★★☆</td><td>★★★☆☆</td><td>Best lower-cost credible</td></tr>
+      <tr><td class="rank">H3</td><td>Hair</td><td>Dr. Emrah Çinik</td><td><span class="badge b-blue">ISHRS-affiliated</span></td><td>Planning/hairline (high volume)</td><td>Own clinic, Istanbul</td><td>FUE/Sapphire/DHI</td><td>~$2.5–3.9k</td><td>Large positive base; clean</td><td>Very high volume; add-on marketing</td><td>Med</td><td>★★★★☆</td><td>★★★☆☆</td><td>Most price-transparent</td></tr>
+      <tr><td class="rank">F1</td><td>Face</td><td>Dr. Ali Mezdeği</td><td>Turkish board; EBOPRAS unconfirmed</td><td>Deep-plane (+ jaw)</td><td>Nişantaşı, Istanbul</td><td>Deep-plane</td><td>~$5.4k+</td><td>Clean; no botched pattern</td><td>EBOPRAS unconfirmed</td><td>Med</td><td>★★★★☆</td><td>★★★★☆</td><td>Best value (face)</td></tr>
+      <tr><td class="rank">F2</td><td>Face</td><td>Dr. Fatih Ceran</td><td><span class="badge b-green">EBOPRAS · ISAPS · TSPRAS</span></td><td>Deep-plane + SMAS (face-focused)</td><td>Biruni Univ. Hospital</td><td>Deep-plane / SMAS</td><td>Quote required</td><td>Clean; no botched cluster</td><td>Confirm price tier</td><td>Med-High</td><td>★★★★☆</td><td>★★★★☆</td><td>Closest match for quotes</td></tr>
+      <tr><td class="rank">F3</td><td>Face</td><td>Dr. Mehmet Solmaz</td><td><span class="badge b-green">EBOPRAS (2021)</span></td><td>Deep-plane + mid + neck</td><td>Istanbul</td><td>Deep-plane</td><td>Quote required</td><td>Clean (one trivial complaint)</td><td>Broad practice; confirm volume</td><td>Med</td><td>★★★★☆</td><td>★★★★☆</td><td>Deep-plane alternative</td></tr>
+      <tr><td class="rank">B1</td><td>BBL</td><td>Doç. Dr. Sedat Tatar</td><td>FEBOPRAS/FACS claim (unverified)</td><td>Confirm performs injection</td><td>JCI hospital (states)</td><td>Ultrasound, subcut-only fat</td><td>Quote required</td><td>~4.9/5; clean</td><td>Verify per-case ultrasound</td><td>Med-High</td><td>★★★★☆</td><td>★★★★★</td><td>Best safety/protocol</td></tr>
+      <tr><td class="rank">B2</td><td>BBL</td><td>Op. Dr. Ali Mezdeği</td><td>Turkish board; EBOPRAS unconfirmed</td><td>Confirm BBL volume</td><td>Nişantaşı / hospital</td><td>"Mini BBL," ultrasound, subcut</td><td>~$4.9k</td><td>Clean; clinic-channel mostly</td><td>Profile leans facial</td><td>Med</td><td>★★★★☆</td><td>★★★★☆</td><td>Best subtle/"mini" + price</td></tr>
+      <tr><td class="rank">B3</td><td>BBL</td><td>Dr. Erman Ak</td><td>EBOPRAS 2021 (claimed)</td><td>Fat grafting + 360 lipo</td><td>Founded hosp. PRS dept</td><td>Fat transfer (confirm US)</td><td>Quote required</td><td>193 RealSelf; positive, clean</td><td>Confirm ultrasound; junior</td><td>Med</td><td>★★★★☆</td><td>★★★★☆</td><td>Best credential/reputation</td></tr>
+      <tr><td class="rank">X</td><td>Incumbent</td><td>Asli Tarcan Clinic</td><td>Hair: physician+techs · Face: surgeon now named</td><td>Techs (hair); named surgeon (verify)</td><td>Partner hospital (get named)</td><td>FUE/DHI; facelift</td><td>$3k hair / $7.5k face</td><td>4.6 avg; harm tail</td><td>Upsell/refund; verify surgeon+hospital</td><td>Med</td><td>★★★★☆</td><td>★★★☆☆</td><td>Hair: conditional · Face: verify tomorrow</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>Scoring model (100 pts)</h3>
+  <p class="footnote">Surgeon credentials & specialty match (20) · Personal involvement (15) · Facility & anesthesia safety (15) · Procedure experience (15) · Long-term independent outcomes (10) · Review quality (10) · Follow-up & complications (5) · Pricing transparency (5) · Overall value (5). Automatic penalties applied where relevant: surgeon not named (−25), specialty unverifiable (−25), technician-led not disclosed (−15), facility not named (−15), accreditation ambiguously represented (−20), credible severe-complication reports (−10 to −30), high-pressure same-day payment (−10). BBL auto-disqualifiers: injectable substance not fully identified; permanent silicone/hydrogel/biopolymer; fat below/within muscle; refusal to confirm ultrasound. <b>For Asli Tarcan's facelift, the open items are verifying the now-named surgeon's board certification and getting the operating hospital named in writing — clear both at tomorrow's meeting and the fair headline price becomes a fair deal.</b></p>
+</section>
+
+<div class="disclaimer">
+<b>How to read this.</b> Compiled from clinic sites, independent review platforms, professional-society directories, and news reporting (all sources linked). <b>Every provider on the budget shortlists has been screened to exclude any with documented fatal incidents or serious botched-outcome patterns.</b> Prices and exchange rates are approximate and move daily. Where a credential couldn't be confirmed at an official registry, or a contact came from a directory rather than the clinic's own site, it's labeled <span class="badge b-grey">verify/unverified</span> — worth confirming before you pay or send. This is decision-support, not medical clearance — an in-person exam with a named, board-verified surgeon is the essential next step.
+</div>
+
+<footer>
+  <div class="wrap">
+    Compiled 17 June 2026 from clinic websites, independent review platforms (Trustpilot, RealSelf, WhatClinic, Hair Restoration Network, Şikayetvar, Reddit), professional-society directories (ABHRS, ISHRS, IAHRS, EBOPRAS, TPRECD), and news reporting. All factual claims are linked inline. Credentials marked unverified could not be confirmed at an official registry in this research and must be checked directly before any payment. This document is decision-support, not medical advice or clearance — an in-person exam with a named, board-verified surgeon is the essential next step.
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
